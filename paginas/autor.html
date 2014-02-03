@@ -1,0 +1,153 @@
+<!DOCTYPE html> 
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"/>
+<meta name="apple-mobile-web-app-status-bar-style" content="black">
+<link rel="apple-touch-icon" href="includes/iconos/HomeIcon.png" />
+
+<!--
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, height=device-height, width=device-width, user-scalable=no"/>
+-->
+
+
+<title>Matinal</title>
+    <!-- JQuery -->
+    <script src="../includes/js/jquery-1.11.0.min.js"></script>
+    
+    <!-- MENU -->
+    <script type="text/javascript" language="javascript" src="../includes/menu/jquery.mmenu.js"></script>
+    <link type="text/css" rel="stylesheet" media="all" href="../includes/menu/mmenu.css" />
+    
+    <!-- JS Menú -->
+    <script type="text/javascript">
+        $(function() {
+            $('#menu').mmenu({
+                position: "left",
+                configuration: {
+                    hardwareAcceleration: false
+                }
+            });
+        });
+
+        //Para abrir el menú deslizando el dedo
+        $(document).on('pageinit',function(){
+            $("#page").on("swiperight",function(){                
+                $("#menu").trigger( "open.mm" );
+            });            
+        });
+    </script>
+    
+    <!-- Phonegap 
+    <script type="text/javascript" src="../includes/cordova/android/cordova.js"></script>
+    <script type="text/javascript" src="../includes/cordova/ios/cordova.js"></script>
+    -->
+    <!-- JQuery Mobile -->    
+    <script src="../includes/js/jquery.mobile-1.3.2.min.js"></script>
+    
+    <!-- TEMA PERSONALIADO -->
+    <link rel="stylesheet" type="text/css" href="../includes/css/dark_theme.css">
+    <link rel="stylesheet" type="text/css" href="../includes/css/jqm_structure.css">
+    
+    <style type="text/css">
+        .icon-menu{
+            margin: 0 10px -5px 0;
+        }
+
+        /*CSS DEL BOTÓN PERSONALIZADO*/
+        a[data-role="button"][data-theme="reset"] {
+            border-radius: 0px; -webkit-border-radius: 0px; -moz-border-radius: 0px;
+            box-shadow: none !important; -webkit-box-shadow: none !important; -moz-box-shadow: none !important;
+            text-decoration: none;
+        }
+
+        a[data-role="button"][data-theme="reset"] .ui-btn-inner {
+            color: white;
+            overflow: visible;
+            text-shadow: 0 -1px 0 #000;
+            padding-left: 10px !important;
+            padding-right: 10px !important;
+            border: 1px solid #333;
+            border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px;
+            background: #333;
+            box-shadow: 0 1px 0 rgba(255,255,255, 0.25), inset 0 1px 1px rgba(0,0,0, 0.2);
+                -webkit-box-shadow: 0 1px 0 rgba(255,255,255, 0.25), inset 0 1px 1px rgba(0,0,0, 0.2);
+                -moz-box-shadow: 0 1px 0 rgba(255,255,255, 0.25), inset 0 1px 1px rgba(0,0,0, 0.2);
+        }
+
+        /* no-background */
+        a[data-role="button"][data-theme="reset"].app-theme-none .ui-btn-inner {
+            color: #222;
+            background: none;
+            border: none;
+            box-shadow: none;
+            text-shadow: none;
+        }
+
+        .ui-icon-menu{
+            background-image: url('../includes/iconos/menu_white.png');
+            width: 28px;
+            height: 28px;
+            background-color: rgba(0, 0, 0, 0);
+            border: none;
+            box-shadow: none;
+            margin: 0px!important;
+            /*margin-left: 5px!important;*/
+        }
+    </style>
+</head>
+
+
+<body>
+    <nav id="menu">
+       <ul>
+          <li><a href="../index.html"><img class="icon-menu" src="../includes/iconos/hoy.png" width="20px" height="20px">Hoy</a></li>
+          <!--<li><a href="buscar.html"><img class="icon-menu" src="../includes/iconos/search.png" width="20px" height="20px">Buscar</a></li>-->
+          <li class="Selected"><a href="#"><img class="icon-menu" src="../includes/iconos/autor.png" width="20px" height="20px">Autor</a></li>
+          <li><a href="creditos.html"><img class="icon-menu" src="../includes/iconos/idea.png" width="20px" height="18px">Créditos</a></li>
+       </ul>
+    </nav>
+
+<div data-role="page" id="page" data-theme="a">
+    <div data-role="header" data-theme="a">
+        <a href="#menu"
+        data-role="button"
+        data-icon="menu"
+        data-theme="reset"
+        data-corners="false"
+        data-iconpos="notext"
+        class="app-theme-none">Menu</a>
+
+        <h1>Autor</h1> 
+    </div>
+    
+    
+    <div data-role="content" id="content">
+        <strong>Nombre:</strong> Milton Bentancor
+        <br><br>
+        <strong>Autobiografía:</strong>
+
+        <div style="text-align: justify; text-indent: 1cm">
+            <p>
+                Nací el 10 de mayo de 1968 en Buenos Aires (Rep. Argentina), pero a los tres años me llevaron a vivir a Uruguay. Allí pasé toda mi infancia y estudié casi toda la escuela secundaria.
+            </p>
+            <p>
+                Luego, terminé una licenciatura y un doctorado en Letras. Fui profesor en la Universidad Adventista del Plata, y desde hace más de quince años vivo y doy clases en la Universidad de Caixas do Sul, Río Grande do Sul, Rep. del Brasil.
+            </p>
+
+            <p>
+                Para completar el mapa, mi esposa Norma es peruana y mis hijas Valeria y Micaela son brasileñas.
+            </p>
+
+            <p>
+                Y ahora tengo la alegría de estar en contacto contigo, sin importar en que rincón del continente estés.
+            </p>
+        </div>
+    </div>
+
+
+    <!-- Footer -->
+
+</div>    
+</body>
+</html>
