@@ -1,4 +1,4 @@
-app_matinal
+Matinal de Jóvenes
 ===========
 
 Aplicación móvil del matinal de jóvenes
