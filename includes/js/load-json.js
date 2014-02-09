@@ -53,7 +53,21 @@ $(document).ready(function(){
 			}
 		},
 		error: function(){
-			output.text('Hubo un error al cargar los datos. Por favor intente recargar la aplicación.');
+			//NO EXISTE CONEXIÓN A INTERNET
+			var online = navigator.onLine;
+
+			if (online == false) {
+				var errorInternet = '<h1 style="text-align: center;">!</h1>'+
+				'<h4 style="text-align: center;">¡No existe conexión a internet y no se puede mostrar la reflexión de hoy!<h4/>';
+
+				output.append(errorInternet);
+			}
+
+			//OCURRIÓ UN ERROR EN LA CONEXIÓN
+			else {
+				var errorConexion = "<h4 style='text-align: center;'>Ocurrió un error al intentar conectarse al servidor y ver la reflexión de hoy. Intente volver a cargar la reflexión con el botón de actualizar.</h4>";
+				output.append(errorConexion);
+			}
 		}
 	});
 });

@@ -57,7 +57,7 @@
     });
 </script>
 
-<!-- Phonegap -->
+<!-- Cordova -->
 <script type="text/javascript" src="includes/cordova/android/cordova.js"></script>
 <script type="text/javascript" src="includes/cordova/ios/cordova.js"></script>
 
@@ -66,7 +66,8 @@
 <!-- TEMA PERSONALIADO -->
 <link rel="stylesheet" type="text/css" href="includes/css/dark_theme.css">
 <link rel="stylesheet" type="text/css" href="includes/css/jqm_structure.css">
-
+<link rel="stylesheet" type="text/css" href="includes/css/animation.css">
+<link rel="stylesheet" type="text/css" href="includes/css/fontello.css">
 
 <style type="text/css">
     .icon-menu{
@@ -125,14 +126,34 @@
         /*margin: 0px!important;*/
         /*margin-right: 20px!important;*/
     }
+
+    #cargando {
+        text-align: center!important;
+    }
 </style>
 
 <!-- Carga de reflexiones -->
 <script src="includes/js/load-json.js"></script>
+
+<script type="text/javascript">
+    function cargando(){
+        $('#cargando').hide();
+        $('#reflexion').fadeIn(500);
+    }
+    
+    function cargado(){
+        $('#cargando').hide();
+    }
+
+    function actualizar(){
+        $('#cargando').show();
+        setTimeout('location.reload(true);',0)
+    }
+</script>
 </head>
 
 
-<body>
+<body onload="cargando();" load="cargado();">
     <nav id="menu">
        <ul>
           <li class="Selected"><a href="#"><img class="icon-menu" src="includes/iconos/hoy.png" width="20px" height="20px">Hoy</a></li>
@@ -163,7 +184,7 @@
         <!--<a href="" onclick="setTimeout('location.reload(true);',0)"
         data-icon="refresh" data-iconpos="notext">Actualizar</a>-->
         <a href="#"
-        onclick="setTimeout('location.reload(true);',0)"
+        onclick="actualizar();"
         data-role="button"
         data-icon="actualizar"
         data-theme="reset"
@@ -178,29 +199,15 @@
 	</div>
     
     
-	<div data-role="content" id="content">
-        <script type="text/javascript">
-            //Verificar la conexión de internet
-            var online = navigator.onLine;
-
-            //Si existe, carga la reflexión
-            if (online) {
-                document.write("<div id='reflexion'> </div>");                
-            }
-            //Si no, mostrar un mensaje de que no existe conexión
-            else{
-                document.write("<h1 style='text-align: center;'>:(</h1>");
-                document.write("<h4 style='text-align: center;'>¡No existe conexión a internet!<br>"+
-                    "Lo sentimos, no se pudo cargar la reflexión de hoy.</h4>");
-            }
-        </script>
-        <!--
-        <div id="reflexion">
-            Aquí va el resultado del JSON
+	<div data-role="content" id="content">        
+        <div id="cargando">
+            <h4>Cargando...</h4>
+            <i class='icon-spin5 animate-spin'></i>
         </div>
-        -->
+
+        <div id="reflexion"></div>
     </div>
-</div>    
+</div>
 
 </body>
 </html>
