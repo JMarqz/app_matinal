@@ -54,6 +54,7 @@ $(document).ready(function(){
 		},
 		error: function(){
 			//NO EXISTE CONEXIÓN A INTERNET
+			/*
 			var online = navigator.onLine;
 
 			if (online == false) {
@@ -65,9 +66,10 @@ $(document).ready(function(){
 
 			//OCURRIÓ UN ERROR EN LA CONEXIÓN
 			else {
+				*/
 				var errorConexion = "<h4 style='text-align: center;'>Ocurrió un error al intentar conectarse al servidor y ver la reflexión de hoy. Intente volver a cargar la reflexión con el botón de actualizar.</h4>";
 				output.append(errorConexion);
-			}
+			//}
 		}
 	});
 });
