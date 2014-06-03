@@ -15,11 +15,14 @@
     <gap:plugin name="org.apache.cordova.splashscreen" />
 
     <!-- Preferences -->
+    <preference name="phonegap-version" value="3.4.0" />
+    <preference name="orientation"      value="portrait" />
     <preference name="prerendered-icon" value="true" />
-
+    <preference name="stay-in-webview"  value="false" /> 
 
     <!-- Splash Screens -->
-    <gap:splash src="splash.png" gap:platform="ios" width="320" height="480" />
+    <!--<gap:splash src="splash.png" gap:platform="ios" width="320" height="480" />-->
+    <gap:splash src="splash.png" />
 
     <!-- App Info -->
     <name>Matinal Jóvenes</name>
