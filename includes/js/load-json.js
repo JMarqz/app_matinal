@@ -1,9 +1,14 @@
 $(document).ready(function(){
 	var output = $('#reflexion');
 
+	var hoy = new Date();
+
+	var dia = hoy.getDate();
+	var mes = hoy.getMonth() + 1;
+	var anio = hoy.getFullYear();
+
 	$.ajax({
-		url: 'http://jmarqz.w.pw/Matinal/server/conex.php',
-		//url: 'http://jmarqz.w.pw/Matinal/includes/js/reflexiones.json',
+		url: 'http://jmarqz.w.pw/Matinal/server/conex.php?dia='+dia+'&mes='+mes+'&anio='+anio,
 		dataType: 'jsonp',
 		jsonp: 'jsoncallback',
 		timeout: 5000,
@@ -67,8 +72,10 @@ $(document).ready(function(){
 			//OCURRIÓ UN ERROR EN LA CONEXIÓN
 			else {
 				*/
+
 				var errorConexion = "<h4 style='text-align: center;'>Ocurrió un error al intentar conectarse al servidor y ver la reflexión de hoy. Intente volver a cargar la reflexión con el botón de actualizar.</h4>";
 				output.append(errorConexion);
+				//output.text('Hubo un error al cargar los datos. Por favor intente recargar la aplicación.');
 			//}
 		}
 	});
