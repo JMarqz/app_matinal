@@ -12,16 +12,21 @@
 	<gap:platform name="android" />
 
 	<!-- Plugins -->
-    <gap:plugin name="org.apache.cordova.splashscreen" version="0.2.7" />
-    <gap:plugin name="org.apache.cordova.inappbrowser" version="0.3.3" />
-    <gap:plugin name="org.apache.cordova.statusbar" version="0.1.4" />
+    <gap:plugin name="org.apache.cordova.splashscreen"  version="0.2.7" />
+    <gap:plugin name="org.apache.cordova.inappbrowser"  version="0.3.3" />
+    <gap:plugin name="org.apache.cordova.statusbar"     version="0.1.4" />
 
     <!-- Preferences -->
-    <preference name="phonegap-version" value="3.3.0" />
-    <preference name="orientation"      value="portrait" />
-    <preference name="prerendered-icon" value="true" />
-    <preference name="StatusBarOverlaysWebView" value="false" />
-    <preference name="StatusBarBackgroundColor" value="#000000" />
+    <preference name="phonegap-version"         value="3.3.0" />
+    <preference name="orientation"              value="portrait" />
+    <preference name="prerendered-icon"         value="true" />
+    <preference name="StatusBarOverlaysWebView" value="true" />
+    <preference name="StatusBarBackgroundColor" value="#FF0000" />
+
+    <feature name="InAppBrowser">
+        <param name="android-package"   value="org.apache.cordova.inappbrowser.InAppBrowser" />
+        <param name="ios-package"       value="CDVInAppBrowser" />
+    </feature>
 
     <!-- Splash Screens -->
     <gap:splash src="splash.png" gap:platform="ios" width="320" height="480" />
