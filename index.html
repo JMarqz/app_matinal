@@ -41,6 +41,14 @@
             $('#cargando').show();
             setTimeout('location.reload(true);',0);
         }
+
+        function abrirURL(url){
+            if(device.platform === 'Android') {
+                navigator.app.loadUrl(url, {openExternal:true});
+            } else {
+                window.open(url, '_system');
+            }
+        }
     </script>
 </head>
 
@@ -89,12 +97,11 @@
     
     
 	<div data-role="content" id="content">
-        <!--
         <div id="cargando" style="display:none;">
             <h4>Cargando...</h4>
             <i class='icon-spin5 animate-spin'></i>
         </div>
-    -->
+    
         <div id="reflexion"></div>
     </div>
 </div>
