@@ -1,7 +1,7 @@
 /* FUNCTIONS */
 
 /* Function to Open in Browser, not inApp */
-openURL: function(url){
+function openURL(url){
 	if(device.platform === 'Android') {
         navigator.app.loadUrl(url, {openExternal:true});
     } else {
