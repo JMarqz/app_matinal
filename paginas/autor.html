@@ -1,32 +1,31 @@
 <!DOCTYPE html> 
-<html>
+<html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"/>
-<meta name="apple-mobile-web-app-status-bar-style" content="black">
-<link rel="apple-touch-icon" href="includes/iconos/HomeIcon.png" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"/>
 
-<!--
-<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, height=device-height, width=device-width, user-scalable=no"/>
--->
+    <title>Matinal</title>
 
-
-<title>Matinal</title>
-    <!-- JQuery -->
+    <!-- JS -->
     <script src="../includes/js/jquery-1.11.0.min.js"></script>
-    
-    <!-- MENU -->
-    <script type="text/javascript" language="javascript" src="../includes/menu/jquery.mmenu.js"></script>
-    <link type="text/css" rel="stylesheet" media="all" href="../includes/menu/mmenu.css" />
-    
+    <script src="../includes/js/jquery.mobile-1.3.2.min.js"></script>
+    <script src="../includes/js/load-json.js"></script>
+    <script src="../includes/js/functions.js"></script>
+    <script src="../includes/menu/jquery.mmenu.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="../includes/css/modificaciones.css">
+    <link rel="stylesheet" type="text/css" href="../includes/css/dark_theme.css">
+    <link rel="stylesheet" type="text/css" href="../includes/css/jqm_structure.css">
+    <link rel="stylesheet" type="text/css" href="../includes/css/animation.css">
+    <link rel="stylesheet" type="text/css" href="../includes/css/fontello.css">
+    <link rel="stylesheet" type="text/css" href="../includes/menu/mmenu.css" />
+
     <!-- JS Menú -->
     <script type="text/javascript">
         $(function() {
             $('#menu').mmenu({
-                position: "left",
-                configuration: {
-                    hardwareAcceleration: false
-                }
+                position: "left"
             });
         });
 
@@ -37,64 +36,6 @@
             });            
         });
     </script>
-    
-    <!-- Phonegap 
-    <script type="text/javascript" src="../includes/cordova/android/cordova.js"></script>
-    <script type="text/javascript" src="../includes/cordova/ios/cordova.js"></script>
-    -->
-    <!-- JQuery Mobile -->    
-    <script src="../includes/js/jquery.mobile-1.3.2.min.js"></script>
-    
-    <!-- TEMA PERSONALIADO -->
-    <link rel="stylesheet" type="text/css" href="../includes/css/dark_theme.css">
-    <link rel="stylesheet" type="text/css" href="../includes/css/jqm_structure.css">
-    
-    <style type="text/css">
-        .icon-menu{
-            margin: 0 10px -5px 0;
-        }
-
-        /*CSS DEL BOTÓN PERSONALIZADO*/
-        a[data-role="button"][data-theme="reset"] {
-            border-radius: 0px; -webkit-border-radius: 0px; -moz-border-radius: 0px;
-            box-shadow: none !important; -webkit-box-shadow: none !important; -moz-box-shadow: none !important;
-            text-decoration: none;
-        }
-
-        a[data-role="button"][data-theme="reset"] .ui-btn-inner {
-            color: white;
-            overflow: visible;
-            text-shadow: 0 -1px 0 #000;
-            padding-left: 10px !important;
-            padding-right: 10px !important;
-            border: 1px solid #333;
-            border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px;
-            background: #333;
-            box-shadow: 0 1px 0 rgba(255,255,255, 0.25), inset 0 1px 1px rgba(0,0,0, 0.2);
-                -webkit-box-shadow: 0 1px 0 rgba(255,255,255, 0.25), inset 0 1px 1px rgba(0,0,0, 0.2);
-                -moz-box-shadow: 0 1px 0 rgba(255,255,255, 0.25), inset 0 1px 1px rgba(0,0,0, 0.2);
-        }
-
-        /* no-background */
-        a[data-role="button"][data-theme="reset"].app-theme-none .ui-btn-inner {
-            color: #222;
-            background: none;
-            border: none;
-            box-shadow: none;
-            text-shadow: none;
-        }
-
-        .ui-icon-menu{
-            background-image: url('../includes/iconos/menu_white.png');
-            width: 28px;
-            height: 28px;
-            background-color: rgba(0, 0, 0, 0);
-            border: none;
-            box-shadow: none;
-            margin: 0px!important;
-            /*margin-left: 5px!important;*/
-        }
-    </style>
 </head>
 
 

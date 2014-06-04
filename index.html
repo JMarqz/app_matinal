@@ -1,126 +1,47 @@
 <!DOCTYPE html> 
-<html>
+<html lang="es">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes"/>
 
-<title>Matinal</title>
+    <title>Matinal</title>
 
-<!-- JQuery -->
-<script src="includes/js/jquery-1.11.0.min.js"></script>
+    <!-- JS -->
+    <script src="includes/js/jquery-1.11.0.min.js"></script>
+    <script src="includes/js/jquery.mobile-1.3.2.min.js"></script>
+    <script src="includes/js/load-json.js"></script>
+    <script src="includes/js/functions.js"></script>
+    <script src="includes/menu/jquery.mmenu.js"></script>
 
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="includes/css/modificaciones.css">
+    <link rel="stylesheet" type="text/css" href="includes/css/dark_theme.css">
+    <link rel="stylesheet" type="text/css" href="includes/css/jqm_structure.css">
+    <link rel="stylesheet" type="text/css" href="includes/css/animation.css">
+    <link rel="stylesheet" type="text/css" href="includes/css/fontello.css">
+    <link rel="stylesheet" type="text/css" href="includes/menu/mmenu.css" />
 
-<!-- MENU -->
-<script type="text/javascript" language="javascript" src="includes/menu/jquery.mmenu.js"></script>
-<link type="text/css" rel="stylesheet" media="all" href="includes/menu/mmenu.css" />
-<script type="text/javascript">
-    $(function() {
-        $('#menu').mmenu({
-            position: "left"
+    <!-- MENU -->
+    <script type="text/javascript">
+        $(function() {
+            $('#menu').mmenu({
+                position: "left"
+            });
+        });    
+        
+        //Para abrir el menú deslizando el dedo
+        $(document).on('pageinit',function(){
+            $("#page").on("swiperight",function(){                
+                $("#menu").trigger( "open.mm" );
+            });            
         });
-    });    
-    
-    //Para abrir el menú deslizando el dedo
-    $(document).on('pageinit',function(){
-        $("#page").on("swiperight",function(){                
-            $("#menu").trigger( "open.mm" );
-        });            
-    });
-</script>
 
-<!-- JQuery Mobile -->    
-<script src="includes/js/jquery.mobile-1.3.2.min.js"></script>
-<!-- TEMA PERSONALIADO -->
-<link rel="stylesheet" type="text/css" href="includes/css/dark_theme.css">
-<link rel="stylesheet" type="text/css" href="includes/css/jqm_structure.css">
-<link rel="stylesheet" type="text/css" href="includes/css/animation.css">
-<link rel="stylesheet" type="text/css" href="includes/css/fontello.css">
-
-<style type="text/css">
-    .icon-menu{
-        margin: 0 10px -5px 0;
-    }
-
-    /*CSS DEL BOTÓN PERSONALIZADO*/
-    a[data-role="button"][data-theme="reset"] {
-        border-radius: 0px; -webkit-border-radius: 0px; -moz-border-radius: 0px;
-        box-shadow: none !important; -webkit-box-shadow: none !important; -moz-box-shadow: none !important;
-        text-decoration: none;
-    }
-
-    a[data-role="button"][data-theme="reset"] .ui-btn-inner {
-        color: white;
-        overflow: visible;
-        text-shadow: 0 -1px 0 #000;
-        padding-left: 10px !important;
-        padding-right: 10px !important;
-        border: 1px solid #333;
-        border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px;
-        background: #333;
-        box-shadow: 0 1px 0 rgba(255,255,255, 0.25), inset 0 1px 1px rgba(0,0,0, 0.2);
-            -webkit-box-shadow: 0 1px 0 rgba(255,255,255, 0.25), inset 0 1px 1px rgba(0,0,0, 0.2);
-            -moz-box-shadow: 0 1px 0 rgba(255,255,255, 0.25), inset 0 1px 1px rgba(0,0,0, 0.2);
-    }
-
-    /* no-background */
-    a[data-role="button"][data-theme="reset"].app-theme-none .ui-btn-inner {
-        color: #222;
-        background: none;
-        border: none;
-        box-shadow: none;
-        text-shadow: none;
-    }
-
-    .ui-icon-menu{
-        background-image: url('includes/iconos/menu_white.png');
-        width: 28px;
-        height: 28px;
-        background-color: rgba(0, 0, 0, 0);
-        border: none;
-        box-shadow: none;
-        margin: 0px!important;
-        /*margin-left: 5px!important;*/
-    }
-
-    .ui-icon-actualizar{
-        background-image: url('includes/iconos/refresh_vector.png');
-        width: 28px;
-        height: 28px;
-        background-color: rgba(0, 0, 0, 0);
-        border: none;
-        box-shadow: none;
-        float: right;
-        /*margin: 0px!important;*/
-        /*margin-right: 20px!important;*/
-    }
-
-    #cargando {
-        text-align: center!important;
-    }
-</style>
-
-<!-- Carga de reflexiones -->
-<script src="includes/js/load-json.js"></script>
-<script src="includes/js/functions.js"></script>
-
-<script type="text/javascript">
-    /*
-    function cargando(){
-        $('#cargando').hide();
-        $('#reflexion').fadeIn(500);
-    }
-    
-    function cargado(){
-        $('#cargando').hide();
-    }
-    
-    function actualizar(){
-        $('#cargando').show();
-        setTimeout('location.reload(true);',0);
-        //window.location.reload();
-    }
-    */
-</script>
+        //Funcion para actualizar
+        function actualizar(){
+            $('#cargando').show();
+            setTimeout('location.reload(true);',0);
+        }
+    </script>
 </head>
 
 
@@ -131,12 +52,11 @@
           <!--<li><a href="paginas/buscar.html"><img class="icon-menu" src="includes/iconos/search.png" width="20px" height="20px">Buscar</a></li>-->
           <li><a href="paginas/autor.html"><img class="icon-menu" src="includes/iconos/autor.png" width="20px" height="20px">Autor</a></li>
           <li><a href="paginas/creditos.html"><img class="icon-menu" src="includes/iconos/idea.png" width="20px" height="18px">Créditos</a></li>
-          <!-- <li><a href="http://www.facebook.com/matutinadejovenesadventistas" target="_blank"><img class="icon-menu" src="includes/iconos/like.png" width="20px" height="20px">Facebook</a></li> -->
        </ul>
     </nav>
 
 <div data-role="page" id="page" data-theme="a">
-	<div data-role="header" data-theme="a" data-position="fixed">
+	<div data-role="header" data-theme="a">
         <!--  data-position="fixed" style='margin-left: 0px; position: fixed; width: 100%;' -->
         <!-- BOTÓN PERSONALIZADO -->
         <a href="#menu"
@@ -147,15 +67,13 @@
         data-iconpos="notext"
         class="app-theme-none">Menu</a>
         
-        <!-- Hoy = App ya finalizada -->
-        <!-- Matinal de Jóvenes = Para acceso directo -->
         <h1>Hoy</h1>
 
         <!-- Botón para recargar página -->
         <!--<a href="" onclick="setTimeout('location.reload(true);',0)"
         data-icon="refresh" data-iconpos="notext">Actualizar</a>-->
         <a href="#"
-        onclick="javascript:setTimeout('location.reload(true);',0);"
+        onclick="actualizar();"
         data-role="button"
         data-icon="actualizar"
         data-theme="reset"
@@ -170,12 +88,13 @@
 	</div>
     
     
-	<div data-role="content" id="content">        
+	<div data-role="content" id="content">
+        <!--
         <div id="cargando" style="display:none;">
             <h4>Cargando...</h4>
             <i class='icon-spin5 animate-spin'></i>
         </div>
-
+    -->
         <div id="reflexion"></div>
     </div>
 </div>
