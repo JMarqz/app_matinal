@@ -18,6 +18,7 @@
     <gap:plugin name="org.apache.cordova.inappbrowser"  version="0.3.3" />
     <!--<gap:plugin name="org.apache.cordova.statusbar"     version="0.1.4" />-->
     <gap:plugin name="com.phonegap.plugin.statusbar" version="1.1.0" />
+    <gap:plugin name="com.ohh2ahh.plugins.appavailability" version="0.2.1" />
 
     
     <!-- Preferences -->
@@ -25,8 +26,6 @@
     <preference name="orientation"              value="portrait" />
     <preference name="prerendered-icon"         value="true" />
     <preference name="StatusBarOverlaysWebView" value="false" />
-    <preference name="StatusBarBackgroundColor" value="#FF0000" />
-    
 
 
     <!-- Permissions -->

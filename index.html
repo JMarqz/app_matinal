@@ -54,6 +54,24 @@
                 window.open(url, '_system');
             }
         }
+
+        appAvailability.check('twitter://', function(availability) {
+            // availability is either true or false
+            if(availability) {
+                alert('Twitter is installed');
+            } else{
+                alert('Twitter is NOT installed');
+            }
+        });
+
+        appAvailability.check('fb://', function(availability) {
+            // availability is either true or false
+            if(availability) {
+                alert('Facebook is installed');
+            } else{
+                alert('Facebook is NOT installed');
+            }
+        });
     </script>
 </head>
 
