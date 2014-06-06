@@ -10,8 +10,6 @@
     <script src="includes/js/jquery-1.11.0.min.js"></script>
     <script src="includes/js/jquery.mobile-1.3.2.min.js"></script>
     <script src="includes/js/load-json.js"></script>
-    <script src="includes/js/functions.js"></script>
-    <!--<script src="includes/js/inappbrowser.js"></script>-->
     <script src="includes/menu/jquery.mmenu.js"></script>
     <script src="plugins/org.apache.cordova.inappbrowser/www/inappbrowser.js"></script>
 
@@ -53,22 +51,22 @@
         }
 
         /* PROBANDO LAS APLICACIONES INSTALADAS */
-        var appTest = $("#plataforma");
-        var nombrePlataforma = "<p>"+device.platform+"</p>";
+        var appTest = $('#plataforma');
+        var nombrePlataforma = '<p>'+device.platform+'</p>';
 
         appTest.append(nombrePlataforma);
 
-        var tw = $("twitter");
+        var tw = $("#twitter");
         
         function instalado(){
             window.appAvailability.check('twitter://', function(availability) {
             // availability is either true or false
             if(availability) {
                 alert('Twitter is installed');
-                tw.append("Twitter is installed");
+                tw.append('Twitter is installed');
             } else{
                 alert('Twitter is NOT installed');
-                tw.append("Twitter is NOT installed");
+                tw.append('Twitter is NOT installed');
             }
         });
         }

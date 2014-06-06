@@ -7,6 +7,16 @@
     version     = "1.0.0" 
     versionCode = "1" >
 
+
+    <!-- App Info -->
+    <name>Matinal Jóvenes</name>
+    <description>
+        Aplicación del Matinal de Jóvenes Adventistas.
+    </description>
+    <author href="https://jmarqz.com" email="jmarqz04@gmail.com">
+        JMarqz
+    </author>
+
     
     <!-- Plataforms -->
     <gap:platform name="ios" />
@@ -14,10 +24,10 @@
 
 	
     <!-- Plugins -->
-    <gap:plugin name="org.apache.cordova.splashscreen"  version="0.2.7" />
-    <gap:plugin name="org.apache.cordova.inappbrowser"  version="0.3.3" />
-    <gap:plugin name="com.phonegap.plugin.statusbar" version="1.1.0" />
-    <gap:plugin name="com.ohh2ahh.plugins.appavailability" version="0.2.1" />
+    <gap:plugin name="org.apache.cordova.splashscreen"      version="0.2.7" />
+    <gap:plugin name="org.apache.cordova.inappbrowser"      version="0.3.3" />
+    <gap:plugin name="com.phonegap.plugin.statusbar"        version="1.1.0" />
+    <gap:plugin name="com.ohh2ahh.plugins.appavailability"  version="0.2.1" />
 
     
     <!-- Preferences -->
@@ -42,15 +52,6 @@
     <!-- Splash Screens -->
     <gap:splash src="splash.png" gap:platform="ios" width="320" height="480" />
 
-
-    <!-- App Info -->
-    <name>Matinal Jóvenes</name>
-    <description>
-    	Aplicación del Matinal de Jóvenes Adventistas.
-    </description>
-    <author href="https://jmarqz.com" email="jmarqz04@gmail.com">
-        JMarqz
-    </author>
 
     <access origin="*" />
 
