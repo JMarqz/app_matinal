@@ -25,6 +25,7 @@
     <preference name="orientation"              value="portrait" />
     <preference name="prerendered-icon"         value="true" />
     <preference name="StatusBarOverlaysWebView" value="false" />
+    <preference name="stay-in-webview"          value="false" />
 
 
     <!-- Permissions -->
