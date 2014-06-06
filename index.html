@@ -43,32 +43,41 @@
         }
 
         function abrirURL(url){
+            console.log('Entrando fx(abrirURL)');
             if(device.platform === 'Android') {
                 navigator.app.loadUrl(url, {openExternal:true});
+                console.log('fx(abrirURL) es Android');
             } else {
                 window.open(url, '_system');
+                console.log('fx(abrirURL) es iOS');
             }
+            console.log('Saliendo fx(abrirURL)');
         }
 
         /* PROBANDO LAS APLICACIONES INSTALADAS */
         var appTest = $('#plataforma');
         var nombrePlataforma = '<p>'+device.platform+'</p>';
-
+        console.log('La plataforma es: '+nombrePlataforma);
         appTest.append(nombrePlataforma);
 
-        var tw = $("#twitter");
+        var tw = $('#twitter');
         
         function instalado(){
+            console.log('Entrando fx(Check TW)');
             window.appAvailability.check('twitter://', function(availability) {
-            // availability is either true or false
-            if(availability) {
-                alert('Twitter is installed');
-                tw.append('Twitter is installed');
-            } else{
-                alert('Twitter is NOT installed');
-                tw.append('Twitter is NOT installed');
-            }
-        });
+                // availability is either true or false
+                console.log('Entrando a AppAvailability');
+                if(availability) {
+                    console.log('Está instalado TW');
+                    alert('Twitter is installed');
+                    tw.append('Twitter is installed');
+                } else{
+                    console.log('No está instalado TW');
+                    alert('Twitter is NOT installed');
+                    tw.append('Twitter is NOT installed');
+                }
+            });
+            console.log('Saliendo de la fx(Check TW)');
         }
     </script>
 </head>
