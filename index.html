@@ -44,6 +44,7 @@
 
         function abrirURL(url){
             console.log('Entrando fx(abrirURL)');
+            console.log(device.platform);
             if(device.platform === 'Android') {
                 navigator.app.loadUrl(url, {openExternal:true});
                 console.log('fx(abrirURL) es Android');
@@ -54,19 +55,21 @@
             console.log('Saliendo fx(abrirURL)');
         }
 
-        /* PROBANDO LAS APLICACIONES INSTALADAS */
         var appTest = $('#plataforma');
-        var nombrePlataforma = '<p>'+device.platform+'</p>';
-        console.log('La plataforma es: '+nombrePlataforma);
-        appTest.append(nombrePlataforma);
-
         var tw = $('#twitter');
-        
+
+        /* PROBANDO LAS APLICACIONES INSTALADAS */        
         function instalado(){
+            var nombrePlataforma = '<p>'+device.platform+'</p>';
+            console.log('La plataforma es: '+nombrePlataforma);
+            appTest.append(nombrePlataforma);
+            
+
             console.log('Entrando fx(Check TW)');
-            window.appAvailability.check('twitter://', function(availability) {
+            appAvailability.check('twitter://', function(availability) {
                 // availability is either true or false
                 console.log('Entrando a AppAvailability');
+                console.log(availability);
                 if(availability) {
                     console.log('Está instalado TW');
                     alert('Twitter is installed');
@@ -78,6 +81,19 @@
                 }
             });
             console.log('Saliendo de la fx(Check TW)');
+        }
+
+        // window.open wasn't opening a link in the system browser on iOS, so we have to use this function (requires phonegap.js)
+        function redirectToSystemBrowser(url) {
+            console.log("Entré a fx(SystemBrowser)");
+            // Wait for Cordova to load
+            document.addEventListener('deviceready', onDeviceReady, false);
+            // Cordova is ready
+            function onDeviceReady() {
+                console.log("A punto de abrir SystemBrowser");
+                // open URL in default web browser
+                var ref = window.open(encodeURI(url), '_system', 'location=yes');
+            }
         }
     </script>
 </head>
@@ -135,10 +151,15 @@
         <p>
             <h3>Probando los Links</h3>
             <a href="http://www.jmarqz.com" target="_blank">Link normal (_blank)</a> <br>
+            <a href="http://www.jmarqz.com" target="_system">Link normal (_system)</a> <br>
             <a href="#" onClick="abrirURL('http://www.jmarqz.com');">Link JS función</a> <br>
+            <a href="#" onClick="navigator.app.loadUrl('https://jmarqz.com/', { openExternal:true });">Navigator.app.loadURL();</a> <br>
             <a href="#" onClick="window.open('http://jmarqz.com', '_blank');">Link window.open('_blank'))</a> <br>
             <a href="#" onClick="window.open('http://jmarqz.com', '_system');">Link window.open('_system'))</a> <br>
-            <a onClick="window.open('http://apache.org', '_system, 'location=yes');">Enlace</a>
+            <a href="#" onClick="window.open('http://apache.org', '_system, 'location=yes');">Enlace</a> <br>
+            <a href="#" onClick="window.open('http://jmarqz.com', '_blank', {closebuttoncaption: 'Close', toolbar: 'yes'});');">Close BTN Close</a> <br>
+            <a href="#" onClick="window.open('http://jmarqz.com', '_system', {closebuttoncaption: 'Cerrar', toolbar: 'yes'});');">Close BTN Cerrar</a> <br>
+            <a href="#" onClick="redirectToSystemBrowser('http://www.jmarqz.com');">redirectToSystemBrowser</a>
         </p>
 
         <h3>Probando las Apps instaladas</h3>
