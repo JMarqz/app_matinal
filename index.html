@@ -7,13 +7,13 @@
     <title>Matinal</title>
 
     <!-- JS -->
+    <script src="phonegap.js"></script>
+    <script src="cordova.js"></script>
+    <script src="cordova_plugins.js"></script>
     <script src="includes/js/jquery-1.11.0.min.js"></script>
     <script src="includes/js/jquery.mobile-1.3.2.min.js"></script>
     <script src="includes/js/load-json.js"></script>
     <script src="includes/menu/jquery.mmenu.js"></script>
-    <script src="phonegap.js"></script>
-    <script src="cordova.js"></script>
-    <script src="cordova_plugins.js"></script>
     <script src="plugins/org.apache.cordova.inappbrowser/www/inappbrowser.js"></script>
 
     <!-- CSS -->
@@ -85,19 +85,6 @@
             });
             console.log('Saliendo de la fx(Check TW)');
         }
-
-        // window.open wasn't opening a link in the system browser on iOS, so we have to use this function (requires phonegap.js)
-        function redirectToSystemBrowser(url) {
-            console.log("Entré a fx(SystemBrowser)");
-            // Wait for Cordova to load
-            document.addEventListener('deviceready', onDeviceReady, false);
-            // Cordova is ready
-            function onDeviceReady() {
-                console.log("A punto de abrir SystemBrowser");
-                // open URL in default web browser
-                var ref = window.open(encodeURI(url), '_system', 'location=yes');
-            }
-        }
     </script>
 </head>
 
@@ -157,13 +144,10 @@
             <a href="#" onClick="window.open('http://jmarqz.com', '_blank');">Link window.open('_blank'))</a> <br>
             <a href="#" onClick="window.open('http://jmarqz.com', '_blank', 'closebuttoncaption=Close,toolbar=yes');">Close BTN Close + toolbar</a> <br>
             <a href="#" onClick="window.open('http://jmarqz.com', '_blank', 'location=yes'); ">Location="yes"</a> <br>
-            <a href="#" onClick="window.open('http://jmarqz.com', '_blank', 'location=yes,closebuttoncaption=cerrar'); ">Location="yes" +
-             boton cerrar</a> <br>
-            <a href="#" onClick="window.open('http://jmarqz.com', '_blank', 'closebuttoncaption=Close' );">Close BTN Close</a> <br>
+            <a href="#" onClick="window.open('http://jmarqz.com', '_blank', 'closebuttoncaption=Cerrar' );">Close BTN Cerrar</a> <br>
             <h3>_system's</h3>
             <a href="#" onClick="window.open('http://jmarqz.com', '_system');">Link window.open('_system'))</a> <br>
             <h3>fx()'s</h3>
-            <a href="#" onClick="redirectToSystemBrowser('http://www.jmarqz.com');">redirectToSystemBrowser</a> <br>
             <a href="#" onClick="abrirURL('http://www.jmarqz.com');">Link JS función</a> <br>
         </p>
 
