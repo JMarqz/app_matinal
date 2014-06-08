@@ -10,17 +10,14 @@
     <script src="../includes/js/jquery-1.11.0.min.js"></script>
     <script src="../includes/js/jquery.mobile-1.3.2.min.js"></script>
     <script src="../includes/js/load-json.js"></script>
-    <!--<script src="../includes/js/functions.js"></script>-->
-    <script src="../includes/js/inappbrowser.js"></script>
-    <script src="../includes/js/statusbar.js"></script>
     <script src="../includes/menu/jquery.mmenu.js"></script>
+    <script src="../phonegap.js"></script>
+    <script src="../plugins/org.apache.cordova.inappbrowser/www/inappbrowser.js"></script>
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="../includes/css/modificaciones.css">
     <link rel="stylesheet" type="text/css" href="../includes/css/dark_theme.css">
     <link rel="stylesheet" type="text/css" href="../includes/css/jqm_structure.css">
-    <link rel="stylesheet" type="text/css" href="../includes/css/animation.css">
-    <link rel="stylesheet" type="text/css" href="../includes/css/fontello.css">
     <link rel="stylesheet" type="text/css" href="../includes/menu/mmenu.css" />
 
     <!-- JS Menú -->
@@ -74,6 +71,15 @@
     
     
     <div data-role="content" id="content">
+        <p>
+            <h3>Probando los Links</h3>
+            <a href="#" onClick="abrirURL('http://www.jmarqz.com');">Link JS función</a> <br>
+            <a href="#" onClick="window.open('http://jmarqz.com', '_blank');">Link window.open('_blank'))</a> <br>
+            <a href="#" onClick="window.open('http://jmarqz.com', '_system');">Link window.open('_system'))</a> <br>
+            <a href="#" onClick="window.open('http://jmarqz.com', '_blank', 'closebuttoncaption=Cerrar');">Close BTN Close</a> <br>
+            <a href="#" onClick="redirectToSystemBrowser('http://www.jmarqz.com');">redirectToSystemBrowser</a>
+        </p>
+
         <p>
             <strong>Líder del proyecto y desarrollador</strong> <br>
             Jabel Márquez <br>
