@@ -12,7 +12,7 @@
     <script src="../includes/js/load-json.js"></script>
     <script src="../includes/js/jquery.mmenu.js"></script>
     <script src="../phonegap.js"></script>
-    <script src="../plugins/org.apache.cordova.inappbrowser/www/inappbrowser.js"></script>
+    <!--<script src="../plugins/org.apache.cordova.inappbrowser/www/inappbrowser.js"></script>-->
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="../includes/css/modificaciones.css">
@@ -72,19 +72,10 @@
     
     <div data-role="content" id="content">
         <p>
-            <h3>Probando los Links</h3>
-            <a href="#" onClick="abrirURL('http://www.jmarqz.com');">Link JS función</a> <br>
-            <a href="#" onClick="window.open('http://jmarqz.com', '_blank');">Link window.open('_blank'))</a> <br>
-            <a href="#" onClick="window.open('http://jmarqz.com', '_system');">Link window.open('_system'))</a> <br>
-            <a href="#" onClick="window.open('http://jmarqz.com', '_blank', 'closebuttoncaption=Cerrar');">Close BTN Close</a> <br>
-            <a href="#" onClick="redirectToSystemBrowser('http://www.jmarqz.com');">redirectToSystemBrowser</a>
-        </p>
-
-        <p>
             <strong>Líder del proyecto y desarrollador</strong> <br>
             Jabel Márquez <br>
             Twitter: <a href="twitter://user?screen_name=jmarqz04">@JMarqz04</a><br>
-            Sitio Web: <a href="#" onclick="abrirURL('http://www.jmarqz.com');">JMarqz.com</a>
+            Sitio Web: <a href="#" onclick="window.open('http://jmarqz.com', '_blank', 'closebuttoncaption=Cerrar');">JMarqz.com</a>
         </p>
         <p>
             <strong>Encargado de reflexiones</strong> <br>

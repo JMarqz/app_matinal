@@ -12,7 +12,7 @@
     <script src="includes/js/load-json.js"></script>
     <script src="includes/js/jquery.mmenu.js"></script>
     <script src="phonegap.js"></script>
-    <script src="plugins/org.apache.cordova.inappbrowser/www/inappbrowser.js"></script>
+    <!--<script src="plugins/org.apache.cordova.inappbrowser/www/inappbrowser.js"></script>-->
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="includes/css/modificaciones.css">
@@ -85,15 +85,10 @@
         }
 
         // window.open wasn't opening a link in the system browser on iOS, so we have to use this function (requires phonegap.js)
-        function redirectToSystemBrowser(url) {
-            console.log("Entré a fx(SystemBrowser)");
-            // Wait for Cordova to load
-            document.addEventListener('deviceready', onDeviceReady, false);
-            // Cordova is ready
+        function redirectToSystemBrowser(url) {            
+            document.addEventListener('deviceready', onDeviceReady, false); // Wait for Cordova to load            
             function onDeviceReady() {
-                console.log("A punto de abrir SystemBrowser");
-                // open URL in default web browser
-                var ref = window.open(encodeURI(url), '_system', 'location=yes');
+                var ref = window.open(encodeURI(url), '_blank', 'closebuttoncaption=Cerrar');
             }
         }
     </script>
@@ -151,11 +146,8 @@
         
         <p>
             <h3>Probando los Links</h3>
-            <a href="#" onClick="abrirURL('http://www.jmarqz.com');">Link JS función</a> <br>
-            <a href="#" onClick="window.open('http://jmarqz.com', '_blank');">Link window.open('_blank'))</a> <br>
-            <a href="#" onClick="window.open('http://jmarqz.com', '_system');">Link window.open('_system'))</a> <br>
-            <a href="#" onClick="window.open('http://jmarqz.com', '_blank', 'closebuttoncaption=Cerrar');">Close BTN Close</a> <br>
-            <a href="#" onClick="redirectToSystemBrowser('http://www.jmarqz.com');">redirectToSystemBrowser</a>
+            <a href="#" onClick="window.open('http://jmarqz.com', '_blank', 'closebuttoncaption=Cerrar');">Close BTN Cerrar</a> <br>
+            <a href="#" onClick="redirectToSystemBrowser('http://www.jmarqz.com');">redirectToSystemBrowser 'Cerrar'</a>
         </p>
 
         <h3>Probando las Apps instaladas</h3>
