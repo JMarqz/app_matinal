@@ -48,9 +48,22 @@
         <param name="ios-package" value="CDVStatusBar" onload="true" />
     </feature>
 
+    <!-- Icon -->
+    <icon src="icon.png" />
+    
 
     <!-- Splash Screens -->
-    <gap:splash src="splash.png" gap:platform="ios" width="320" height="480" />
+    <!-- Android -->
+    <gap:splash src="screen/android/screen-ldpi-portrait.png"       gap:platform="android" gap:qualifier="port-ldpi" />
+    <gap:splash src="screen/android/screen-mdpi-portrait.png"       gap:platform="android" gap:qualifier="port-mdpi" />
+    <gap:splash src="screen/android/screen-hdpi-portrait.png"       gap:platform="android" gap:qualifier="port-hdpi" />
+    <gap:splash src="screen/android/screen-xhdpi-portrait.png"      gap:platform="android" gap:qualifier="port-xhdpi" />
+    <!-- iOS -->
+    <gap:splash src="screen/ios/screen-iphone-portrait.png"         gap:platform="ios"     width="320" height="480" />
+    <gap:splash src="screen/ios/screen-iphone-portrait-2x.png"      gap:platform="ios"     width="640" height="960" />
+    <gap:splash src="screen/ios/screen-iphone-portrait-568h-2x.png" gap:platform="ios"     width="640" height="1136" />
+    <gap:splash src="screen/ios/screen-ipad-portrait.png"           gap:platform="ios"     width="768" height="1024" />
+    <gap:splash src="screen/ios/screen-ipad-portrait-2x.png"        gap:platform="ios"     width="1536" height="2008" />
 
 
     <access origin="*" />
