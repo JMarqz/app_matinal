@@ -63,7 +63,10 @@
         function instalado(){
             var nombrePlataforma = '<p>'+device.platform+'</p>';
             console.log('La plataforma es: '+nombrePlataforma);
-            appTest.append(nombrePlataforma);
+            //Probar si funciona el append();
+            tw.append('<p>Probando...</p>');
+
+            tw.append(nombrePlataforma);
             
 
             console.log('Entrando fx(Check TW)');
@@ -73,11 +76,11 @@
                 console.log(availability);
                 if(availability) {
                     console.log('Está instalado TW');
-                    alert('Twitter is installed');
+                    window.alert('Twitter is installed');
                     tw.append('Twitter is installed');
                 } else{
                     console.log('No está instalado TW');
-                    alert('Twitter is NOT installed');
+                    window.alert('Twitter is NOT installed');
                     tw.append('Twitter is NOT installed');
                 }
             });
