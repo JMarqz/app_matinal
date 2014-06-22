@@ -12,6 +12,7 @@
     <script src="includes/js/jquery.mobile-1.3.2.min.js"></script>
     <script src="includes/js/load-json.js"></script>
     <script src="includes/js/jquery.mmenu.js"></script>
+    <script src="includes/js/functions.js"></script>
     
 
     <!-- CSS -->
@@ -21,72 +22,6 @@
     <link rel="stylesheet" type="text/css" href="includes/css/animation.css">
     <link rel="stylesheet" type="text/css" href="includes/css/fontello.css">
     <link rel="stylesheet" type="text/css" href="includes/css/mmenu.css" />
-
-    <!-- MENU -->
-    <script type="text/javascript">
-        //MENU
-        $(function() {
-            $('#menu').mmenu({
-                position: "left"
-            });
-        });
-        
-        //Función para abrir el menú deslizando el dedo
-        $(document).on('pageinit',function(){
-            $("#page").on("swiperight",function(){
-                $("#menu").trigger( "open.mm" );
-            });
-        });
-
-
-        //ACTUALIZAR
-        function actualizar(){
-            $('#cargando').show();
-            setTimeout('location.reload(true);',0);
-        }
-
-        /* PROBANDO LAS APLICACIONES INSTALADAS */
-        function instalado(){
-            document.addEventListener("deviceready", onDeviceReady, false);
-            function onDeviceReady() {
-                var plataforma = device.platform;
-                var twitter = "";
-
-                //Saber si es Android o iOS
-                if (plataforma == "Android") {
-                    twitter = "com.twitter.android";
-                } else if(plataforma == "iOS"){
-                    twitter = "twitter://";
-                };
-
-                //Checar Twitter v0.3.0
-                /*
-                appAvailability.check(
-                twitter, // URI Scheme
-                function() {  // Success callback
-                    alert('Twitter está instalado');
-                },
-                function() {  // Error callback
-                    alert('Twitter NO está instalado');
-                }
-                */
-
-                alert("Previo a fx() appAvailability");
-                //Checar Twitter v0.2.1
-                appAvailability.check(twitter, function(availability) {
-                    alert("Entrando fx() appAvailability");
-                    // availability is either true or false
-                    alert(availability);
-                    if(availability == true) {
-                        alert('Twitter está instalado');
-                    } else{
-                        alert('Twitter NO está instalado');
-                    }
-                    alert("Saliendo fx() appAvailability");
-                });
-            }
-        }
-    </script>
 </head>
 
 
@@ -139,12 +74,6 @@
             <i class='icon-spin5 animate-spin'></i>
         </div>
         
-        
-        <h3>Probando las Apps instaladas</h3>
-        <div id="plataforma"></div>
-        <a href="#" onClick="instalado();">¿Está Twitter instalado?</a> <br>
-        <div id="twitter"></div>
-
         <div id="reflexion"></div>
     </div>
 </div>

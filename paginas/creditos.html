@@ -12,6 +12,7 @@
     <script src="../includes/js/jquery.mobile-1.3.2.min.js"></script>
     <script src="../includes/js/load-json.js"></script>
     <script src="../includes/js/jquery.mmenu.js"></script>
+    <script src="../includes/js/functions.js"></script>
     
 
     <!-- CSS -->
@@ -19,30 +20,6 @@
     <link rel="stylesheet" type="text/css" href="../includes/css/dark_theme.css">
     <link rel="stylesheet" type="text/css" href="../includes/css/jqm_structure.css">
     <link rel="stylesheet" type="text/css" href="../includes/css/mmenu.css" />
-
-    <!-- JS Menú -->
-    <script type="text/javascript">
-        $(function() {
-            $('#menu').mmenu({
-                position: "left"
-            });
-        });
-
-        //Para abrir el menú deslizando el dedo
-        $(document).on('pageinit',function(){
-            $("#page").on("swiperight",function(){                
-                $("#menu").trigger( "open.mm" );
-            });            
-        });
-
-        function abrirURL(url){
-            if(device.platform === 'Android') {
-                navigator.app.loadUrl(url, {openExternal:true});
-            } else {
-                window.open(url, '_system');
-            }
-        }
-    </script>
 </head>
 
 
@@ -74,13 +51,13 @@
         <p>
             <strong>Líder del proyecto y desarrollador</strong> <br>
             Jabel Márquez <br>
-            Twitter: <a href="twitter://user?screen_name=jmarqz04">@JMarqz04</a><br>
+            Twitter: <a href="#" onClick="abrirTwitter('jmarqz04');">@JMarqz04</a><br>
             Sitio Web: <a href="#" onclick="window.open('http://jmarqz.com', '_blank', 'closebuttoncaption=Cerrar');">JMarqz.com</a>
         </p>
         <p>
             <strong>Encargado de reflexiones</strong> <br>
             Abdiel Márquez <br>
-            Twitter: <a href="twitter://user?screen_name=abdielroma">@abdielroma</a>
+            Twitter: <a href="#" onClick="abrirTwitter('abdielroma');">@abdielroma</a>
         </p>
         <p>
             Agradecimiento especial para Fernando Alonso y su ayuda mediante su página de Facebook: <a href="fb://profile/347307408699493" >Matutina de Jóvenes Adventistas</a>
