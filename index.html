@@ -45,52 +45,34 @@
             setTimeout('location.reload(true);',0);
         }
 
-
-        //APPS INSTALADAS
-        // - var appTest = $('#plataforma');
-        // - var tw = $('#twitter');
-
         /* PROBANDO LAS APLICACIONES INSTALADAS */        
         function instalado(){
-            appAvailability.check(
-                'twitter://', // URI Scheme
+            document.addEventListener("deviceready", onDeviceReady, false);
+            function onDeviceReady() {
+                var plataforma = device.platform;
+                var twitter = "";
+
+                alert(plataforma);
+
+                if (plataforma == "Android") {
+                    twitter = "com.twitter.android";
+                } else if(plataforma =="iOS"){
+                    twitter = "twitter://";
+                };
+
+                alert(twitter);
+
+                //Checar Twitter
+                appAvailability.check(
+                twitter, // URI Scheme
                 function() {  // Success callback
-                    console.log('Twitter is available');
-                    alert('Twitter is installed');
+                    alert('Twitter está instalado');
                 },
                 function() {  // Error callback
-                    console.log('Twitter is not available');
-                    alert('Twitter is NOT installed');
+                    alert('Twitter NO está instalado');
                 }
             );
-            /*
-            var nombrePlataforma = '<p>'+device.platform+'</p>';
-            console.log('La plataforma es: '+nombrePlataforma);
-            //Probar si funciona el append();
-            tw.append('<p>Probando...</p>');
-
-            tw.append(nombrePlataforma);
-            
-
-            console.log('Entrando fx(Check TW)');
-            appAvailability.check('twitter://', function(availability) {
-                // availability is either true or false
-                console.log('Entrando a AppAvailability');
-                console.log(availability);
-                if(availability) {
-                    console.log('Está instalado TW');
-                    window.alert('Twitter is installed');
-                    tw.append('Twitter is installed');
-                    window.open('http://jmarqz.com', '_blank', 'closebuttoncaption=Cerrar');
-                } else{
-                    console.log('No está instalado TW');
-                    window.alert('Twitter is NOT installed');
-                    tw.append('Twitter is NOT installed');
-                    window.open('http://jmarqz.com', '_blank', 'closebuttoncaption=Cerrar');
-                }
-            });
-            console.log('Saliendo de la fx(Check TW)');
-            */
+            }            
         }
     </script>
 </head>
