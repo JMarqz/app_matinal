@@ -54,15 +54,17 @@
 
                 alert(plataforma);
 
+                //Saber si es Android o iOS
                 if (plataforma == "Android") {
                     twitter = "com.twitter.android";
-                } else if(plataforma =="iOS"){
+                } else if(plataforma == "iOS"){
                     twitter = "twitter://";
                 };
 
                 alert(twitter);
 
-                //Checar Twitter
+                //Checar Twitter v0.3.0
+                /*
                 appAvailability.check(
                 twitter, // URI Scheme
                 function() {  // Success callback
@@ -71,6 +73,15 @@
                 function() {  // Error callback
                     alert('Twitter NO está instalado');
                 }
+                */
+
+                //Checar Twitter v0.2.1
+                appAvailability.checkBool(twitter, function(availability) {
+                    // availability is either true or false
+                    if(availability) {
+                        alert('Twitter is available');
+                    }
+                });
             );
             }            
         }
