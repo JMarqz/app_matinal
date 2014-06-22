@@ -29,13 +29,13 @@
             $('#menu').mmenu({
                 position: "left"
             });
-        });    
+        });
         
         //Función para abrir el menú deslizando el dedo
         $(document).on('pageinit',function(){
-            $("#page").on("swiperight",function(){                
+            $("#page").on("swiperight",function(){
                 $("#menu").trigger( "open.mm" );
-            });            
+            });
         });
 
 
@@ -45,14 +45,12 @@
             setTimeout('location.reload(true);',0);
         }
 
-        /* PROBANDO LAS APLICACIONES INSTALADAS */        
+        /* PROBANDO LAS APLICACIONES INSTALADAS */
         function instalado(){
             document.addEventListener("deviceready", onDeviceReady, false);
             function onDeviceReady() {
                 var plataforma = device.platform;
                 var twitter = "";
-
-                alert(plataforma);
 
                 //Saber si es Android o iOS
                 if (plataforma == "Android") {
@@ -60,8 +58,6 @@
                 } else if(plataforma == "iOS"){
                     twitter = "twitter://";
                 };
-
-                alert(twitter);
 
                 //Checar Twitter v0.3.0
                 /*
@@ -75,14 +71,18 @@
                 }
                 */
 
+                alert("Previo a fx() appAvailability");
                 //Checar Twitter v0.2.1
                 appAvailability.checkBool(twitter, function(availability) {
+                    alert("Entrando fx() appAvailability");
                     // availability is either true or false
-                    if(availability) {
-                        alert('Twitter is available');
+                    alert(availability);
+                    if(availability == true) {
+                        alert('Twitter está instalado');
                     } else{
                         alert('Twitter NO está instalado');
                     }
+                    alert("Saliendo fx() appAvailability");
                 });
             }
         }
