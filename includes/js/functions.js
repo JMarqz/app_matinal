@@ -20,11 +20,11 @@ function actualizar(){
 }
 
 /* PROBANDO LAS APLICACIONES INSTALADAS */
-function abrirTwitter(){
+function abrirTwitter(userName){
     document.addEventListener("deviceready", onDeviceReady, false);
-    function onDeviceReady(userName) {
+    function onDeviceReady() {
         var plataforma = device.platform;
-        var twitter = "";
+        var twitter;
 
         //Saber si es Android o iOS
         if (plataforma == "Android") {
@@ -49,10 +49,40 @@ function abrirTwitter(){
         appAvailability.check(twitter, function(availability) {
             // availability is either true or false
             if(availability) {
-                window.open("twitter://user?screen_name="+userName, "_system");
+                window.open("twitter://user?screen_name="+userName);
             } else{
                 window.open("http://www.twitter.com/"+userName, "_system");
             }
         });
     }
 }
+
+
+function abrirFB(user){
+    var fb = saberFB();
+        appAvailability.check(fb, function(availability) {
+            if(availability) {
+                window.open("fb://profile/"+user);                
+            } else{
+                window.open("http://www.facebook.com/"+user, "_system");
+            }
+        });
+    }
+}
+
+function saberFB(){
+    document.addEventListener("deviceready", onDeviceReady, false);
+    function onDeviceReady(){
+        var plataforma = device.platform;
+        var fb;
+
+        if (plataforma == "Android") {
+            fb = "com.facebook.katana";
+        } else if(plataforma == "iOS"){
+            fb = "fb://";
+        };
+
+        return fb;
+    }
+}
+
