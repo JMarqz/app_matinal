@@ -59,18 +59,6 @@ function abrirTwitter(userName){
 
 
 function abrirFB(user){
-    var fb = saberFB();
-        appAvailability.check(fb, function(availability) {
-            if(availability) {
-                window.open("fb://profile/"+user);                
-            } else{
-                window.open("http://www.facebook.com/"+user, "_system");
-            }
-        });
-    }
-}
-
-function saberFB(){
     document.addEventListener("deviceready", onDeviceReady, false);
     function onDeviceReady(){
         var plataforma = device.platform;
@@ -82,7 +70,12 @@ function saberFB(){
             fb = "fb://";
         };
 
-        return fb;
+        appAvailability.check(fb, function(availability) {
+            if(availability) {
+                window.open("fb://profile/"+user);
+            } else{
+                window.open("http://www.facebook.com/"+user, "_system");
+            }
+        });
     }
 }
-
