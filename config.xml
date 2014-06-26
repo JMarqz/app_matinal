@@ -55,7 +55,8 @@
 
     <!-- Splash Screens -->
     <!-- Android -->
-    <gap:splash src="screen/android/screen-port-ldpi.png"       gap:platform="android" gap:qualifier="port-ldpi" />
+    <!--<gap:splash src="screen/android/screen-port-ldpi.png"       gap:platform="android" gap:qualifier="port-ldpi" />-->
+    <gap:splash src="screen/android/screen-ldpi-portrait.png"       gap:platform="android" gap:qualifier="port-ldpi" />
     <gap:splash src="screen/android/screen-port-mdpi.png"       gap:platform="android" gap:qualifier="port-mdpi" />
     <gap:splash src="screen/android/screen-port-hdpi.png"       gap:platform="android" gap:qualifier="port-hdpi" />
     <gap:splash src="screen/android/screen-port-xhdpi.png"      gap:platform="android" gap:qualifier="port-xhdpi" />
