@@ -43,7 +43,7 @@ function abrirTwitter(userName){
         function() {  // Error callback
             alert('Twitter NO está instalado');
             window.open("http://www.twitter.com/"+userName, "_system");
-        }
+        });
 
         //Checar Twitter v0.2.1
         /*appAvailability.check(twitter, function(availability) {
@@ -54,7 +54,7 @@ function abrirTwitter(userName){
                 window.open("http://www.twitter.com/"+userName, "_system");
             }
         });*/
-    }   
+    }
 }
 
 
