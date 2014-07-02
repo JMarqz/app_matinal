@@ -28,7 +28,7 @@
     <gap:plugin name="org.apache.cordova.splashscreen"      version="0.2.7" />
     <gap:plugin name="org.apache.cordova.inappbrowser"      version="0.3.3" />
     <gap:plugin name="com.phonegap.plugin.statusbar"        version="1.1.0" />
-    <gap:plugin name="com.ohh2ahh.plugins.appavailability"  version="0.2.1" />
+    <gap:plugin name="com.ohh2ahh.plugins.appavailability"  version="0.3.0" />
 
     
     <!-- Preferences -->
@@ -55,11 +55,10 @@
 
     <!-- Splash Screens -->
     <!-- Android -->
-    <!--<gap:splash src="screen/android/screen-port-ldpi.png"       gap:platform="android" gap:qualifier="port-ldpi" />-->
-    <gap:splash src="screen/android/screen-ldpi-portrait.png"       gap:platform="android" gap:qualifier="port-ldpi" />
-    <gap:splash src="screen/android/screen-port-mdpi.png"       gap:platform="android" gap:qualifier="port-mdpi" />
-    <gap:splash src="screen/android/screen-port-hdpi.png"       gap:platform="android" gap:qualifier="port-hdpi" />
-    <gap:splash src="screen/android/screen-port-xhdpi.png"      gap:platform="android" gap:qualifier="port-xhdpi" />
+    <gap:splash src="screen/android/screen-port-ldpi.png"       gap:platform="android" gap:qualifier="ldpi" />
+    <gap:splash src="screen/android/screen-port-mdpi.png"       gap:platform="android" gap:qualifier="mdpi" />
+    <gap:splash src="screen/android/screen-port-hdpi.png"       gap:platform="android" gap:qualifier="hdpi" />
+    <gap:splash src="screen/android/screen-port-xhdpi.png"      gap:platform="android" gap:qualifier="xhdpi" />
     <!-- iOS -->
     <gap:splash src="screen/ios/screen-iphone-portrait.png"         gap:platform="ios"     width="320" height="480" />
     <gap:splash src="screen/ios/screen-iphone-portrait-2x.png"      gap:platform="ios"     width="640" height="960" />
