@@ -1,4 +1,4 @@
-// CARGANDO
+// CARGANDO...
 window.onload = function() {
    document.getElementById("cargando").style.display = "none";
    document.getElementById("reflexion").style.display = "block";
@@ -19,10 +19,12 @@ $(document).on('pageinit',function(){
 });
 
 // ACTUALIZAR
+/*
 function actualizar(){
     $('#cargando').show();
     setTimeout('location.reload(true);',0);
 }
+*/
 
 // ABRIR TWITTER NATIVO 
 function abrirTwitter(userName){
