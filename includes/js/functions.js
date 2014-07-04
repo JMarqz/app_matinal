@@ -1,3 +1,9 @@
+// CARGANDO
+window.onload = function() {
+   document.getElementById("cargando").style.display = "none";
+   document.getElementById("reflexion").style.display = "block";
+}
+
 // CONFIGURACIÓN MENU
 $(function() {
     $('#menu').mmenu({
