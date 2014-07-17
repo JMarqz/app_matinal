@@ -18,14 +18,6 @@ $(document).on('pageinit',function(){
     });
 });
 
-// ACTUALIZAR
-/*
-function actualizar(){
-    $('#cargando').show();
-    setTimeout('location.reload(true);',0);
-}
-*/
-
 // ABRIR TWITTER NATIVO 
 function abrirTwitter(userName){
     document.addEventListener("deviceready", onDeviceReady, false);
