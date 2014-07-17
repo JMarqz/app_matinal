@@ -36,7 +36,7 @@
     <preference name="orientation"              value="portrait" />
     <preference name="prerendered-icon"         value="true" />
     <preference name="StatusBarOverlaysWebView" value="false" />
-    <preference name="KeepRunning"              value="false" />
+    <!--<preference name="KeepRunning"              value="false" />-->
     
     
     <!-- Permissions -->
@@ -46,7 +46,12 @@
     </feature>
 
     <feature name="StatusBar">
-        <param name="ios-package" value="CDVStatusBar" onload="true" />
+        <param name="ios-package"       value="CDVStatusBar" onload="true" />
+    </feature>
+
+    <feature name="SplashScreen">
+        <param name="ios-package"       value="CDVSplashScreen"/>
+        <param name="onload"            value="true" />
     </feature>
     
 
