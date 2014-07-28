@@ -36,23 +36,6 @@
     <preference name="orientation"              value="portrait" />
     <preference name="prerendered-icon"         value="true" />
     <preference name="StatusBarOverlaysWebView" value="false" />
-    <!--<preference name="KeepRunning"              value="false" />-->
-    
-    
-    <!-- Permissions -->
-    <feature name="InAppBrowser">
-        <param name="android-package"   value="org.apache.cordova.inappbrowser.InAppBrowser" />
-        <param name="ios-package"       value="CDVInAppBrowser" />
-    </feature>
-
-    <feature name="StatusBar">
-        <param name="ios-package"       value="CDVStatusBar" onload="true" />
-    </feature>
-
-    <feature name="SplashScreen">
-        <param name="ios-package"       value="CDVSplashScreen"/>
-        <param name="onload"            value="true" />
-    </feature>
     
 
     <!-- Icon -->
@@ -60,23 +43,18 @@
     
 
     <!-- Splash Screens -->
-    <!-- Android
-    <gap:splash src="screen/android/screen-port-ldpi.png"       gap:platform="android" gap:qualifier="ldpi" />
-    <gap:splash src="screen/android/screen-port-mdpi.png"       gap:platform="android" gap:qualifier="mdpi" />
-    <gap:splash src="screen/android/screen-port-hdpi.png"       gap:platform="android" gap:qualifier="hdpi" />
-    <gap:splash src="screen/android/screen-port-xhdpi.png"      gap:platform="android" gap:qualifier="xhdpi"/>
+    <!-- Android -->
+    <gap:splash src="res/screen/android/screen-ldpi-port.png"       gap:platform="android" gap:qualifier="ldpi" />
+    <gap:splash src="res/screen/android/screen-mdpi-port.png"       gap:platform="android" gap:qualifier="mdpi" />
+    <gap:splash src="res/screen/android/screen-hdpi-port.png"       gap:platform="android" gap:qualifier="hdpi" />
+    <gap:splash src="res/screen/android/screen-xhdpi-port.png"      gap:platform="android" gap:qualifier="xhdpi"/>
     
-    <gap:splash src="screen/android/screen-ldpi-port.png"       gap:platform="android" gap:qualifier="ldpi" />
-    <gap:splash src="screen/android/screen-mdpi-port.png"       gap:platform="android" gap:qualifier="mdpi" />
-    <gap:splash src="screen/android/screen-hdpi-port.png"       gap:platform="android" gap:qualifier="hdpi" />
-    <gap:splash src="screen/android/screen-xhdpi-port.png"      gap:platform="android" gap:qualifier="xhdpi"/>
-    -->
     <!-- iOS -->
-    <gap:splash src="screen/ios/screen-iphone-portrait.png"         gap:platform="ios"     width="320" height="480" />
-    <gap:splash src="screen/ios/screen-iphone-portrait-2x.png"      gap:platform="ios"     width="640" height="960" />
-    <gap:splash src="screen/ios/screen-iphone-portrait-568h-2x.png" gap:platform="ios"     width="640" height="1136" />
-    <gap:splash src="screen/ios/screen-ipad-portrait.png"           gap:platform="ios"     width="768" height="1024" />
-    <gap:splash src="screen/ios/screen-ipad-portrait-2x.png"        gap:platform="ios"     width="1536" height="2008" />
+    <gap:splash src="res/screen/ios/screen-iphone-portrait.png"         gap:platform="ios"     width="320" height="480" />
+    <gap:splash src="res/screen/ios/screen-iphone-portrait-2x.png"      gap:platform="ios"     width="640" height="960" />
+    <gap:splash src="res/screen/ios/screen-iphone-portrait-568h-2x.png" gap:platform="ios"     width="640" height="1136" />
+    <gap:splash src="res/screen/ios/screen-ipad-portrait.png"           gap:platform="ios"     width="768" height="1024" />
+    <gap:splash src="res/screen/ios/screen-ipad-portrait-2x.png"        gap:platform="ios"     width="1536" height="2008" />
 
 
 </widget>
