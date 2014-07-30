@@ -38,13 +38,24 @@
     <preference name="StatusBarOverlaysWebView" value="false" />
     
 
+    <!-- Permissions -->
+    <feature name="InAppBrowser">
+        <param name="android-package"   value="org.apache.cordova.inappbrowser.InAppBrowser" />
+        <param name="ios-package"       value="CDVInAppBrowser" />
+    </feature>
+
+    <feature name="StatusBar">
+        <param name="ios-package" value="CDVStatusBar" onload="true" />
+    </feature>
+    
+
     <!-- Icon -->
     <icon src="icon.png" />
     
 
     <!-- Splash Screens -->
     <gap:splash src="splash.png" />
-    
+
     <!-- Android -->
     <gap:splash src="screen/android/screen-ldpi-port.png"       gap:platform="android" gap:qualifier="ldpi" />
     <gap:splash src="screen/android/screen-mdpi-port.png"       gap:platform="android" gap:qualifier="mdpi" />
