@@ -7,31 +7,18 @@
     <title>Matinal</title>
 
     <!-- JS -->
+    <script src="../phonegap.js"></script>
     <script src="../includes/js/jquery-1.11.0.min.js"></script>
     <script src="../includes/js/jquery.mobile-1.3.2.min.js"></script>
     <script src="../includes/js/jquery.mmenu.js"></script>
+    <script src="../includes/js/functions.js"></script>
+    
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="../includes/css/modificaciones.css">
     <link rel="stylesheet" type="text/css" href="../includes/css/dark_theme.css">
     <link rel="stylesheet" type="text/css" href="../includes/css/jqm_structure.css">
     <link rel="stylesheet" type="text/css" href="../includes/css/mmenu.css" />
-
-    <!-- JS Menú -->
-    <script type="text/javascript">
-        $(function() {
-            $('#menu').mmenu({
-                position: "left"
-            });
-        });
-
-        //Para abrir el menú deslizando el dedo
-        $(document).on('pageinit',function(){
-            $("#page").on("swiperight",function(){                
-                $("#menu").trigger( "open.mm" );
-            });            
-        });
-    </script>
 </head>
 
 
@@ -39,7 +26,7 @@
     <nav id="menu">
        <ul>
           <li><a href="../index.html"><img class="icon-menu" src="../includes/iconos/hoy.png" width="20px" height="20px">Hoy</a></li>
-          <!--<li><a href="buscar.html"><img class="icon-menu" src="../includes/iconos/search.png" width="20px" height="20px">Buscar</a></li>-->
+          <li><a href="buscar.html"><img class="icon-menu" src="../includes/iconos/search.png" width="20px" height="20px">Buscar</a></li>
           <li class="Selected"><a href="#"><img class="icon-menu" src="../includes/iconos/autor.png" width="20px" height="20px">Autor</a></li>
           <li><a href="creditos.html"><img class="icon-menu" src="../includes/iconos/idea.png" width="20px" height="18px">Créditos</a></li>
        </ul>
@@ -64,7 +51,7 @@
         <br><br>
         <strong>Autobiografía:</strong>
 
-        <div style="text-align: justify; text-indent: 1cm">
+        <div class="autor">
             <p>
                 Nací el 10 de mayo de 1968 en Buenos Aires (Rep. Argentina), pero a los tres años me llevaron a vivir a Uruguay. Allí pasé toda mi infancia y estudié casi toda la escuela secundaria.
             </p>

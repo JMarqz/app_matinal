@@ -1,60 +1,88 @@
+/* PERSONALIZAR ICONOS */
 .icon-menu{
-        margin: 0 10px -5px 0;
-    }
+    margin: 0 10px -5px 0;
+}
 
-    /*CSS DEL BOTÓN PERSONALIZADO*/
-    a[data-role="button"][data-theme="reset"] {
-        border-radius: 0px; -webkit-border-radius: 0px; -moz-border-radius: 0px;
-        box-shadow: none !important; -webkit-box-shadow: none !important; -moz-box-shadow: none !important;
-        text-decoration: none;
-    }
+/*CSS DEL BOTÓN PERSONALIZADO*/
+a[data-role="button"][data-theme="reset"] {
+    border-radius: 0px; -webkit-border-radius: 0px; -moz-border-radius: 0px;
+    box-shadow: none !important; -webkit-box-shadow: none !important; -moz-box-shadow: none !important;
+    text-decoration: none;
+}
 
-    a[data-role="button"][data-theme="reset"] .ui-btn-inner {
-        color: white;
-        overflow: visible;
-        text-shadow: 0 -1px 0 #000;
-        padding-left: 10px !important;
-        padding-right: 10px !important;
-        border: 1px solid #333;
-        border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px;
-        background: #333;
-        box-shadow: 0 1px 0 rgba(255,255,255, 0.25), inset 0 1px 1px rgba(0,0,0, 0.2);
-            -webkit-box-shadow: 0 1px 0 rgba(255,255,255, 0.25), inset 0 1px 1px rgba(0,0,0, 0.2);
-            -moz-box-shadow: 0 1px 0 rgba(255,255,255, 0.25), inset 0 1px 1px rgba(0,0,0, 0.2);
-    }
+a[data-role="button"][data-theme="reset"] .ui-btn-inner {
+    color: white;
+    overflow: visible;
+    text-shadow: 0 -1px 0 #000;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    border: 1px solid #333;
+    border-radius: 5px; -webkit-border-radius: 5px; -moz-border-radius: 5px;
+    background: #333;
+    box-shadow: 0 1px 0 rgba(255,255,255, 0.25), inset 0 1px 1px rgba(0,0,0, 0.2);
+        -webkit-box-shadow: 0 1px 0 rgba(255,255,255, 0.25), inset 0 1px 1px rgba(0,0,0, 0.2);
+        -moz-box-shadow: 0 1px 0 rgba(255,255,255, 0.25), inset 0 1px 1px rgba(0,0,0, 0.2);
+}
 
-    /* no-background */
-    a[data-role="button"][data-theme="reset"].app-theme-none .ui-btn-inner {
-        color: #222;
-        background: none;
-        border: none;
-        box-shadow: none;
-        text-shadow: none;
-    }
+/* no-background */
+a[data-role="button"][data-theme="reset"].app-theme-none .ui-btn-inner {
+    color: #222;
+    background: none;
+    border: none;
+    box-shadow: none;
+    text-shadow: none;
+}
 
-    .ui-icon-menu{
-        background-image: url('../iconos/menu_white.png')!important;
-        width: 28px!important;
-        height: 28px!important;
-        background-color: rgba(0, 0, 0, 0)!important;
-        border: none!important;
-        box-shadow: none!important;
-        margin: 0px!important;
-        /*margin-left: 5px!important;*/
-    }
+.ui-icon-menu{
+    background-image: url('../iconos/menu_white.png')!important;
+    width: 28px!important;
+    height: 28px!important;
+    background-color: rgba(0, 0, 0, 0)!important;
+    border: none!important;
+    box-shadow: none!important;
+    margin: 0px!important;
+    /*margin-left: 5px!important;*/
+}
 
-    .ui-icon-actualizar{
-        background-image: url('../iconos/refresh_vector.png')!important;
-        width: 28px!important;
-        height: 28px!important;
-        background-color: rgba(0, 0, 0, 0)!important;
-        border: none!important;
-        box-shadow: none!important;
-        float: right!important;
-        /*margin: 0px!important;*/
-        /*margin-right: 20px!important;*/
-    }
+.ui-icon-actualizar{
+    background-image: url('../iconos/refresh_vector.png')!important;
+    width: 28px!important;
+    height: 28px!important;
+    background-color: rgba(0, 0, 0, 0)!important;
+    border: none!important;
+    box-shadow: none!important;
+    float: right!important;
+    /*margin: 0px!important;*/
+    /*margin-right: 20px!important;*/
+}
 
-    #cargando {
-        text-align: center!important;
-    }
+/* CENTRAR */
+.centrar{
+    text-align:center;
+}
+
+/* OCULTAR */
+.ocultar{
+    display:none;
+}
+
+/* CARGA */
+#cargando {
+    text-align: center!important;
+}
+
+/* SECCION AUTOR */
+.autor{
+    text-align: justify;
+    text-indent: 1cm;
+}
+
+/* SECCIÓN BUSCAR */
+#reflexion-buscar{
+    padding: 20px;
+}
+
+/* BOTON DE BÚSQUEDA POR FECHA */
+.btn-buscar{
+    background-color: black!important;
+}
