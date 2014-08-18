@@ -9,7 +9,7 @@
     <!-- JS -->
     <script src="phonegap.js"></script>
     <script src="includes/js/jquery-1.11.0.min.js"></script>
-    <script src="includes/js/jquery.mobile-1.3.2.min.js"></script>
+    <script src="includes/js/jquery.mobile-1.4.3.min.js"></script>
     <script src="includes/js/load-json.js"></script>
     <script src="includes/js/jquery.mmenu.js"></script>
     <script src="includes/js/functions.js"></script>
@@ -17,8 +17,9 @@
 
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="includes/css/modificaciones.css">
-    <link rel="stylesheet" type="text/css" href="includes/css/dark_theme.css">
-    <link rel="stylesheet" type="text/css" href="includes/css/jqm_structure.css">
+    <link rel="stylesheet" type="text/css" href="includes/css/dark_theme.min.css">
+    <link rel="stylesheet" type="text/css" href="includes/css/jquery.mobile.structure-1.4.3.min.css">
+    <link rel="stylesheet" type="text/css" href="includes/css/jquery.mobile.icons.min.css" />
     <link rel="stylesheet" type="text/css" href="includes/css/animation.css">
     <link rel="stylesheet" type="text/css" href="includes/css/fontello.css">
     <link rel="stylesheet" type="text/css" href="includes/css/mmenu.css" />
@@ -39,28 +40,12 @@
 	<div data-role="header" data-theme="a">
         <!--  data-position="fixed" style='margin-left: 0px; position: fixed; width: 100%;' -->
         <!-- BOTÓN PERSONALIZADO -->
-        <a href="#menu"
-        data-role="button"
-        data-icon="menu"
-        data-theme="reset"
-        data-corners="false"
-        data-iconpos="notext"
-        class="app-theme-none">Menu</a>
+        <a href="#menu" data-icon="bars" data-iconpos="notext" class="ui-icon ui-nodisc-icon ui-icon-mymenu">Menu</a>
         
         <h1>Hoy</h1>
 
         <!-- Botón para recargar página -->
-        <!--<a href="" onclick="setTimeout('location.reload(true);',0)"
-        data-icon="refresh" data-iconpos="notext">Actualizar</a>-->
-        <a href="#"
-        onclick="window.location.reload();"
-        data-role="button"
-        data-icon="actualizar"
-        data-theme="reset"
-        data-corners="false"
-        data-iconpos="notext"
-        style="margin-right: 20px;"
-        class="app-theme-none">Actualizar</a>
+        <a href="#" onclick="window.location.reload();" data-icon="refresh" data-iconpos="notext" class="ui-icon ui-nodisc-icon">Actualizar</a>
 
         <!-- Agregar botón para audio... EN ALGÚN FUTURO
         <a href="" data-icon="refresh" data-iconpos="notext">Escuchar</a>
