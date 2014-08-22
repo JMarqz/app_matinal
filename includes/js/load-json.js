@@ -8,7 +8,7 @@ $(document).ready(function(){
 	var anio = hoy.getFullYear();
 
 	$.ajax({
-		url: 'http://jmarqz.w.pw/Matinal/server/conex.php?dia='+dia+'&mes='+mes+'&anio='+anio,
+		url: 'http://jmarqz.site90.net/matinal/server/conex.php?dia='+dia+'&mes='+mes+'&anio='+anio,
 		dataType: 'jsonp',
 		jsonp: 'jsoncallback',
 		timeout: 5000,
