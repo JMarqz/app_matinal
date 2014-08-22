@@ -27,6 +27,13 @@ $(document).on('pageinit',function(){
     });
 });
 
+// ACTUALIZAR
+function actualizar(){
+    document.getElementById("reflexion").style.display = "none";
+    document.getElementById("cargando").style.display = "block";
+    window.location.reload();
+}
+
 // ABRIR TWITTER NATIVO 
 function abrirTwitter(userName){
     var plataforma = device.platform;
