@@ -34,6 +34,11 @@ function actualizar(){
     window.location.reload();
 }
 
+// ABRIR URL
+function abrirURL(url){
+    window.open(url, '_system');
+}
+
 // ABRIR TWITTER NATIVO 
 function abrirTwitter(userName){
     var plataforma = device.platform;
