@@ -9,9 +9,22 @@
     border: none!important;
 }
 
-.ui-icon-mymenu:after{
-    background-image: url("../iconos/menu_white.png");
-    background-size: 18px 18px;
+.ui-btn-icon-notext.ui-btn-left {
+    left: 1em!important;
+}
+
+.ui-btn-icon-notext.ui-btn-right {
+    right: 1em!important;
+}
+
+.ui-icon-refresh:after{
+    background-size: 20px 20px;
+    border-radius: 0em!important;
+}
+
+.ui-icon-bars:after{
+    background-size: 22px 22px;
+    border-radius: 0em!important;
 }
 
 /* CENTRAR */
