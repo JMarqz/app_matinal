@@ -47,7 +47,7 @@ $(document).ready(function(){
 						output.append(reflexion);
 
 					} else if(i==1){
-						var pie_pagina = '<p id="footer_reflexion" style="text-align: left; font-size: 12px; font-style: italic;">'+
+						var pie_pagina = '<p id="footer_reflexion" style="text-align: right; font-size: 12px; font-style: italic;">'+
 						item.nombreMatinal+'<br>'+
 						item.autor+'<br>'+
 						item.anio+'</p>';
