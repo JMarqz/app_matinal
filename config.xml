@@ -37,9 +37,9 @@
     <!-- Preferences -->
     <preference name="phonegap-version"         value="3.5.0" />
     <preference name="orientation"              value="portrait" />
+    <preference name="AutoHideSplashScreen"     value="false" />
     <preference name="prerendered-icon"         value="true" />
-    <preference name="StatusBarOverlaysWebView" value="false" />
-    <preference name="StatusBarBackgroundColor" value="#FF0000" />
+    <preference name="StatusBarOverlaysWebView" value="true" />
     
 
     <!-- Permissions -->

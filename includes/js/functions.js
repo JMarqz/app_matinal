@@ -5,6 +5,9 @@ function onDeviceReady() {
     setTimeout(function() {
         navigator.splashscreen.hide();
     }, 2000);
+
+    StatusBar.backgroundColorByHexString("#4e9fd5");
+    StatusBar.styleLightContent();
 }
 
 // CARGANDO...
