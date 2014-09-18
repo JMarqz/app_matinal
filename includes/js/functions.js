@@ -100,7 +100,11 @@ function bisiesto(anio){
 function buscar(){
     var dia = document.getElementById("dia").value;
     var mes = document.getElementById("mes").value;
-    var anio = document.getElementById("anio").value;    
+    var anio = document.getElementById("anio").value;
+
+    var fecha = document.getElementById("fecha-buscar").value;
+
+    alert(fecha);
     
     cargarReflexion(dia, mes, anio);
 }
