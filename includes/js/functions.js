@@ -98,15 +98,16 @@ function bisiesto(anio){
 
 // BUSCAR
 function buscar(){
-    /*var dia = document.getElementById("dia").value;
-    var mes = document.getElementById("mes").value;
-    var anio = document.getElementById("anio").value;
-*/
-    //var fecha = document.getElementById("fecha-buscar").value;
-
-    alert("Buscando");
+    var fechaSeleccionada = $("#fecha-buscar").val();
+    var arrFecha = fechaSeleccionada.split("-");
     
-    //cargarReflexion(dia, mes, anio);
+    var anio = arrFecha[0];
+    var mes = arrFecha[1];
+    var dia = arrFecha[2];
+
+    //alert();
+    
+    cargarReflexion(dia, mes, anio);
 }
 
 
@@ -239,7 +240,7 @@ function cargarReflexion(dia, mes, anio){
     });
 }
 
-
+/*
 function mostrarSelectorFecha(){
     var output = $('#reflexion-buscar');
     var btnBuscarFecha = document.getElementById("buscar-fecha");
@@ -252,3 +253,4 @@ function ocultarSelectorFecha(){
     var btnBuscarFecha = document.getElementById("buscar-fecha");
     btnBuscarFecha.style.display = "none";
 }
+*/

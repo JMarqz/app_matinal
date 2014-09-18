@@ -12,25 +12,6 @@
     <script src="../includes/js/jquery.mobile-1.4.3.min.js"></script>
     <script src="../includes/js/jquery.mmenu.js"></script>
     <script src="../includes/js/functions.js"></script>
-    <script type="text/javascript">
-        //$("#fecha-buscar").val("20-12-2014");
-        //$("#fecha-buscar").val("2014-10-01");
-        var today = new Date();
-        var dd = today.getDate();
-        var mm = today.getMonth()+1; //January is 0!
-        var yyyy = today.getFullYear();
-
-        if (mm < 10) {
-            mm = "0"+mm;
-        };
-
-        var fecha = yyyy + "-" + mm + "-" + dd;
-        //var fecha = dd + "-" + mm + "-" + yyyy;
-
-        $('#fecha-buscar').val(fecha);
-        $('#fecha-buscar').attr('value', fecha);
-        //alert(fecha);
-    </script>
     
 
     <!-- CSS -->
