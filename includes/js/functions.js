@@ -6,7 +6,7 @@ function onDeviceReady() {
         navigator.splashscreen.hide();
     }, 2000);
 
-    StatusBar.backgroundColorByHexString("#4e9fd5");
+    StatusBar.backgroundColorByHexString("#000000");
     StatusBar.styleLightContent();
 }
 
@@ -98,15 +98,15 @@ function bisiesto(anio){
 
 // BUSCAR
 function buscar(){
-    var dia = document.getElementById("dia").value;
+    /*var dia = document.getElementById("dia").value;
     var mes = document.getElementById("mes").value;
     var anio = document.getElementById("anio").value;
+*/
+    //var fecha = document.getElementById("fecha-buscar").value;
 
-    var fecha = document.getElementById("fecha-buscar").value;
-
-    alert(fecha);
+    alert("Buscando");
     
-    cargarReflexion(dia, mes, anio);
+    //cargarReflexion(dia, mes, anio);
 }
 
 

@@ -12,6 +12,25 @@
     <script src="../includes/js/jquery.mobile-1.4.3.min.js"></script>
     <script src="../includes/js/jquery.mmenu.js"></script>
     <script src="../includes/js/functions.js"></script>
+    <script type="text/javascript">
+        //$("#fecha-buscar").val("20-12-2014");
+        //$("#fecha-buscar").val("2014-10-01");
+        var today = new Date();
+        var dd = today.getDate();
+        var mm = today.getMonth()+1; //January is 0!
+        var yyyy = today.getFullYear();
+
+        if (mm < 10) {
+            mm = "0"+mm;
+        };
+
+        var fecha = yyyy + "-" + mm + "-" + dd;
+        //var fecha = dd + "-" + mm + "-" + yyyy;
+
+        $('#fecha-buscar').val(fecha);
+        $('#fecha-buscar').attr('value', fecha);
+        //alert(fecha);
+    </script>
     
 
     <!-- CSS -->
@@ -42,7 +61,16 @@
     
     
     <div data-role="content" id="content">
-        <!-- Reflexión de Mañana -->
+        <label class="centrar" for="fecha-buscar">Selecciona la fecha a buscar</label>
+
+        <div data-role="controlgroup" data-type="horizontal" class="centrar">
+            <input id="fecha-buscar" name="fecha-buscar" class="input-buscar" data-wrapper-class="controlgroup-textinput ui-btn"type="date" min="2014-01-01" max="2014-12-31">
+            <button data-inline="true" onClick="buscar()" class="btn-buscar">Buscar</button>
+        </div>
+
+
+        
+        <!-- Reflexión de Mañana 
         <fieldset data-role="controlgroup" data-type="horizontal" class="centrar">
             <button id="manana" data-inline="true" onClick="manana()">Reflexión de mañana</button>
             <button id="btn" data-inline="true" onClick="mostrarSelectorFecha()">Buscar por fecha</button>
@@ -50,8 +78,6 @@
 
         <fieldset id="buscar-fecha" data-role="controlgroup" data-type="horizontal" data-mini="true" class="centrar ocultar">
             <p>Selecciona la fecha que quieres buscar:</p>
-
-            <input id="fecha-buscar" type="date" min="2014-01-01" max="2014-12-31">
             
             <label for="dia">Día</label>
             <select name="dia" id="dia">
@@ -90,14 +116,14 @@
 
             <label for="mes">Mes</label>
             <select name="mes" id="mes">
-                <!--
+                <!
                 <option value="1">Enero</option>
                 <option value="2">Febrero</option>
                 <option value="3">Marzo</option>
                 <option value="4">Abril</option>
                 <option value="5">Mayo</option>
                 <option value="6">Junio</option>
-                -->
+                >
                 <option value="7">Julio</option>
                 <option value="8">Agosto</option>
                 <option value="9">Septiembre</option>
@@ -112,6 +138,7 @@
 
             <button id="btn" data-inline="true" onClick="buscar()" class="btn-buscar">Buscar</button>
         </fieldset>
+        -->
 
         
     </div>
