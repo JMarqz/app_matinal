@@ -15,8 +15,8 @@ $(document).ready(function(){
 		success: function(data, status){
 			//NO EXISTE LA REFLEXIÓN EN LA BASE DE DATOS
 			if (data==null || data=="Error") {
-				var errorMessage = '<h1 style="text-align: center;">:(</h1>'+
-				'<h4 style="text-align: center;">La reflexión de hoy no se encuentra disponible.<br>Por favor, intente más tarde.</h4>';
+				var errorMessage = '<h1 class="centrar">:(</h1>'+
+				'<h4 class="centrar">La reflexión de hoy no se encuentra disponible.<br>Por favor, intente más tarde.</h4>';
 
 				output.append(errorMessage);
 			}
@@ -40,14 +40,14 @@ $(document).ready(function(){
 		            }
 
 		            if (i==0) {
-						var reflexion = '<div id="fecha" style="text-align: right;">'+item.dia+'/'+mes+'/'+item.anio+'</div>' +
-						'<h1 id="titulo" style="text-align: center;">'+item.titulo+'</h1>' +
-						'<p id="versiculo" style="font-style:italic; text-align: center;">'+item.versiculo+'</p>'+
-						'<div id="contedido" style="text-align: justify; text-indent: 1cm">'+item.contenido+'</div>'					
+						var reflexion = '<div id="fecha" class="derecha">'+item.dia+'/'+mes+'/'+item.anio+'</div>' +
+						'<h1 id="titulo" class="centrar">'+item.titulo+'</h1>' +
+						'<p id="versiculo" class="versiculo centrar">'+item.versiculo+'</p>'+
+						'<div id="contedido" class="contenido-reflexion">'+item.contenido+'</div>'					
 						output.append(reflexion);
 
 					} else if(i==1){
-						var pie_pagina = '<p id="footer_reflexion" style="text-align: right; font-size: 12px; font-style: italic;">'+
+						var pie_pagina = '<p id="footer_reflexion" class="creditos-reflexion">'+
 						item.nombreMatinal+'<br>'+
 						item.autor+'<br>'+
 						item.anio+'</p>';
@@ -58,8 +58,8 @@ $(document).ready(function(){
 			}
 		},
 		error: function(){
-			var errorConexion = '<h1 style="text-align: center;">:(</h1>' + 
-			'<h4 style="text-align: center;">¡Ocurrió un error al intentar conectarse al servidor!'+
+			var errorConexion = '<h1 class="centrar">:(</h1>' + 
+			'<h4 class="centrar">¡Ocurrió un error al intentar conectarse al servidor!'+
 			'<br>Intenta volver a cargar la reflexión en el botón de actualizar.</h4>';
 
 			output.append(errorConexion);

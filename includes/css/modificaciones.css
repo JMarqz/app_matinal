@@ -27,9 +27,33 @@
     border-radius: 0em!important;
 }
 
-/* CENTRAR */
+/* CLASES DE REFLEXIONES */
+.versiculo{
+    font-style:italic;
+}
+
+.contenido-reflexion{
+    text-align: justify;
+    text-indent: 1cm;
+}
+
+.creditos-reflexion{
+    text-align: right;
+    font-size: 12px;
+    font-style: italic;
+}
+
+/* ALINEAR */
 .centrar{
     text-align:center;
+}
+
+.izquierda{
+    text-align:left;
+}
+
+.derecha{
+    text-align:right;
 }
 
 /* OCULTAR */
@@ -49,7 +73,7 @@
 }
 
 /* SECCIÓN BUSCAR */
-#reflexion-buscar{
+#reflexion-buscada{
     padding: 20px;
 }
 
