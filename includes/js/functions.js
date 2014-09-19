@@ -14,9 +14,24 @@ function onDeviceReady() {
 window.onload = function() {
     var cargando = document.getElementById("cargando");
     var reflexion = document.getElementById("reflexion");
+    var reflexionBuscar = document.getElementById('fecha-buscar');
 
     if (cargando != null) { cargando.style.display = "none" };
     if (reflexion != null) { reflexion.style.display = "block" };
+    if (reflexionBuscar != null) {
+        var hoy = new Date();
+
+        var dia = hoy.getDate();
+        var mes = hoy.getMonth() + 1;
+        var anio = hoy.getFullYear();
+
+        if (mes < 10) { mes = "0"+mes };
+        if (dia < 10) { dia = "0"+dia };
+
+        hoy = anio + "-" + mes + "-" + dia;
+
+        $('#fecha-buscar').attr('value', hoy);
+    };
 }
 
 // CONFIGURACIÓN MENU
@@ -108,6 +123,8 @@ function buscar(){
     var mes = parseInt(arrFecha[1]);
     var dia = parseInt(arrFecha[2]);
     
+    alert("año: " + anio + "\n" + "mes: " + mes + "\n" + "dia: " + dia);
+
     cargarReflexion(dia, mes, anio);
 }
 
