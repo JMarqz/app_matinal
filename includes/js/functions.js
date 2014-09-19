@@ -14,10 +14,11 @@ function onDeviceReady() {
 window.onload = function() {
     var cargando = document.getElementById("cargando");
     var reflexion = document.getElementById("reflexion");
-    var reflexionBuscar = document.getElementById('fecha-buscar');
+    //var reflexionBuscar = document.getElementById('fecha-buscar');
 
     if (cargando != null) { cargando.style.display = "none" };
     if (reflexion != null) { reflexion.style.display = "block" };
+    /*
     if (reflexionBuscar != null) {
         var hoy = new Date();
 
@@ -32,6 +33,7 @@ window.onload = function() {
 
         $('#fecha-buscar').attr('value', hoy);
     };
+    */
 }
 
 // CONFIGURACIÓN MENU
@@ -118,14 +120,30 @@ function bisiesto(anio){
 function buscar(){
     var fechaSeleccionada = $("#fecha-buscar").val();
     var arrFecha = fechaSeleccionada.split("-");
+
+    var options = {
+          mode: 'date',
+          date: new Date(),
+          minDate: '2014-01-01',
+          maxDate: '2014-12-31',
+          doneButtonLabel: 'Ok',
+          doneButtonColor: '#FF00FF',
+          cancelButtonLabel: 'Cancelar',
+          cancelButtonColor: '#FF0000'
+        };
+
+    datePicker.show(options, function(date){
+      alert("date result " + date);
+    });
     
+    /*
     var anio = parseInt(arrFecha[0]);
     var mes = parseInt(arrFecha[1]);
     var dia = parseInt(arrFecha[2]);
     
     alert("año: " + anio + "\n" + "mes: " + mes + "\n" + "dia: " + dia);
-
-    cargarReflexion(dia, mes, anio);
+    */
+    //cargarReflexion(dia, mes, anio);
 }
 
 
