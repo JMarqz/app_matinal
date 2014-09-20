@@ -38,6 +38,7 @@
     <preference name="phonegap-version"         value="3.5.0" />
     <preference name="orientation"              value="portrait" />
     <preference name="prerendered-icon"         value="true" />
+    <preference name="DisallowOverscroll"       value="true"/>
     <preference name="AutoHideSplashScreen"     value="false" />
     
 
