@@ -62,14 +62,42 @@ function abrirURL(url){
     window.open(url, '_system');
 }
 
+function seleccionadorFechas(){
+    var hoy = new Date();
+
+    var dia = hoy.getDate();
+    var mes = hoy.getMonth() + 1;
+    var anio = hoy.getFullYear();
+
+    hoy = anio + "-" + mes + "-" + dia;
+
+    var options = {
+      date: hoy,
+      mode: 'date',
+      minDate: "2014-09-01",
+      maxDate: "2014-12-31"
+    };
+
+    datePicker.show(options, function(date){
+        alert("date result " + date);
+    });
+}
+
 function compartir(){
+    /*
     var titulo = document.getElementById("titulo").innerHTML;
     var versiculo = document.getElementById("versiculo").innerHTML;
     var contedido = document.getElementById("contedido").innerHTML;
     var copyrigth = document.getElementById("footer_reflexion").innerHTML;
-    var matinal = "- Matinal de Jóvenes"
+    var matinal = "- Matinal de Jóvenes";
 
-    var mensaje = titulo + "\n" + versiculo + "\n" + contedido + "\n" + copyrigth;
+    var mensaje = titulo + "\n\n" + versiculo + "\n\n" + contedido + "\n\n" + copyrigth;
+    mensaje = mensaje.replace(/<br>/g, "\n").replace(/<p>/g, "").replace(/<\/p>/g, "");
+    */
+    var versiculo = document.getElementById("versiculo").innerHTML;
+    var matinal = " - Matinal de Jóvenes";
+    var mensaje = versiculo.replace(/<br>/g, " ");
+    mensaje = mensaje + matinal;
 
     window.plugins.socialsharing.share(mensaje, 'Matinal de Jóvenes');
 }
