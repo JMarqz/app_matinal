@@ -63,8 +63,12 @@ function abrirURL(url){
 }
 
 function compartir(){
-    alert("Compartiendo...");
-    window.plugins.socialsharing.share('Mensaje', 'subject', '../../icons/default.png', 'http://jmarqz.com');
+    var titulo = document.getElementById("titulo").innerHTML;
+    var versiculo = document.getElementById("versiculo").innerHTML;
+
+    var mensaje = titulo + "<br>" + mensaje;
+
+    window.plugins.socialsharing.share(mensaje, 'Matinal de Jóvenes');
 }
 
 // ABRIR TWITTER NATIVO 
@@ -109,16 +113,6 @@ function abrirFB(userName){
     function() {  // Error callback
         window.open("http://www.facebook.com/"+userName, "_system");
     });
-}
-
-// AÑO BISIESTO
-function bisiesto(anio){
-    anio = 0;
-    if (anio%4 == 0 && (anio%100 != 0 || anio%400 == 0)) {
-        return true;
-    } else{
-        return false;
-    }
 }
 
 // BUSCAR

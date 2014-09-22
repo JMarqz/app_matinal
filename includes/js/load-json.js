@@ -55,6 +55,8 @@ $(document).ready(function(){
 						output.append(pie_pagina);
 					}
 				});
+				
+				$("#btnCompartir").removeClass("ui-state-disabled");
 			}
 		},
 		error: function(){
