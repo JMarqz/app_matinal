@@ -65,8 +65,11 @@ function abrirURL(url){
 function compartir(){
     var titulo = document.getElementById("titulo").innerHTML;
     var versiculo = document.getElementById("versiculo").innerHTML;
+    var contedido = document.getElementById("contedido").innerHTML;
+    var copyrigth = document.getElementById("footer_reflexion").innerHTML;
+    var matinal = "- Matinal de Jóvenes"
 
-    var mensaje = titulo + "<br>" + mensaje;
+    var mensaje = titulo + "\n" + versiculo + "\n" + contedido + "\n" + copyrigth;
 
     window.plugins.socialsharing.share(mensaje, 'Matinal de Jóvenes');
 }
@@ -117,32 +120,14 @@ function abrirFB(userName){
 
 // BUSCAR
 function buscar(){
+    $("#btnCompartir").addClass("ui-state-disabled");
     var fechaSeleccionada = $("#fecha-buscar").val();
     var arrFecha = fechaSeleccionada.split("-");
-
-    var options = {
-          mode: 'date',
-          date: new Date(),
-          minDate: '2014-01-01',
-          maxDate: '2014-12-31',
-          doneButtonLabel: 'Ok',
-          doneButtonColor: '#FF00FF',
-          cancelButtonLabel: 'Cancelar',
-          cancelButtonColor: '#FF0000'
-        };
-
-    datePicker.show(options, function(date){
-        alert("date result " + date);
-    });
-    
-    /*
     var anio = parseInt(arrFecha[0]);
     var mes = parseInt(arrFecha[1]);
     var dia = parseInt(arrFecha[2]);
     
-    alert("año: " + anio + "\n" + "mes: " + mes + "\n" + "dia: " + dia);
-    */
-    //cargarReflexion(dia, mes, anio);
+    cargarReflexion(dia, mes, anio);
 }
 
 function cargarReflexion(dia, mes, anio){
@@ -198,6 +183,8 @@ function cargarReflexion(dia, mes, anio){
                         output.append(pie_pagina);
                     }
                 });
+                
+                $("#btnCompartir").removeClass("ui-state-disabled");
             }
         },
         error: function(){
