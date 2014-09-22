@@ -44,9 +44,13 @@
         
         <h1>Hoy</h1>
 
-        <!-- Botón para recargar página -->
-        <a href="#" onclick="actualizar()" data-icon="refresh" data-iconpos="notext" class="ui-icon ui-nodisc-icon">Actualizar</a>
-
+        <div data-type="horizontal" data-role="controlgroup" class="ui-btn-right">  
+            <!-- Botón para recargar página -->
+            <a href="#" data-role="button" onclick="actualizar()" data-icon="refresh" data-iconpos="notext" class="ui-icon ui-nodisc-icon">Actualizar</a>
+            <!-- Botón para recargar compartir -->
+            <a href="#" data-role="button" onclick="compartir()" data-icon="action" data-iconpos="notext" class="ui-icon ui-nodisc-icon">Actualizar</a>
+        </div>
+        
         <!-- Agregar botón para audio... EN ALGÚN FUTURO
         <a href="" data-icon="refresh" data-iconpos="notext">Escuchar</a>
          -->

@@ -62,6 +62,11 @@ function abrirURL(url){
     window.open(url, '_system');
 }
 
+function compartir(){
+    alert("Compartiendo...");
+    window.plugins.socialsharing.share('Mensaje', 'subject', '../../icons/default.png', 'http://jmarqz.com');
+}
+
 // ABRIR TWITTER NATIVO 
 function abrirTwitter(userName){
     var plataforma = device.platform;
@@ -133,7 +138,7 @@ function buscar(){
         };
 
     datePicker.show(options, function(date){
-      alert("date result " + date);
+        alert("date result " + date);
     });
     
     /*
@@ -145,71 +150,6 @@ function buscar(){
     */
     //cargarReflexion(dia, mes, anio);
 }
-
-
-/*
-// MAÑANA
-function manana(){
-    var hoy = new Date();
-
-    var dia = hoy.getDate();
-    var mes = hoy.getMonth() + 1;
-    var anio = hoy.getFullYear();
-
-    ocultarSelectorFecha();
-
-    // Verificar si es año bisiesto
-    if (mes == 2) {
-        if (bisiesto(anio)) {
-            // Febrero, 29 dias
-            if (dia < 29){
-                dia++;
-            } else{
-                dia = 1;
-                mes++;
-            }
-        } else{
-            // Febrero 28 dias
-            if (dia < 28) {
-                dia++;
-            } else{
-                dia = 1;
-                mes++;
-            }
-        }
-
-    } else if(mes == 1 || mes == 3 || mes == 5 || mes == 7 || mes == 8 || mes == 10){
-        // Meses de 31 dias
-        if (dia < 31) {
-            dia++;
-        } else{
-            dia = 1;
-            mes++;
-        }
-
-    } else if (mes == 12){
-        // Diciembre
-        if (dia < 31) {
-            dia++;
-        } else{
-            // Fin de año
-            dia = 1;
-            mes = 1;
-            anio++;
-        }
-    } else{
-        // Meses de 30 dias
-        if (dia < 30) {
-            dia++;
-        } else{
-            dia = 1;
-            mes++;
-        }
-    }
-
-    cargarReflexion(dia, mes, anio);
-}
-*/
 
 function cargarReflexion(dia, mes, anio){
     var output = $('#reflexion-buscada');
@@ -250,7 +190,7 @@ function cargarReflexion(dia, mes, anio){
 
                     if (i==0) {
                         var reflexion = '<div id="fecha" class="derecha">'+item.dia+'/'+mes+'/'+item.anio+'</div>' +
-                        '<h1 id="titulo" class="centrar">'+item.titulo+'</h1>' +
+                        '<h2 id="titulo" class="centrar">'+item.titulo+'</h2>' +
                         '<p id="versiculo" class="versiculo centrar">'+item.versiculo+'</p>'+
                         '<div id="contedido" class="contenido-reflexion">'+item.contenido+'</div>'                    
                         output.html(reflexion);

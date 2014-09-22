@@ -41,7 +41,7 @@ $(document).ready(function(){
 
 		            if (i==0) {
 						var reflexion = '<div id="fecha" class="derecha">'+item.dia+'/'+mes+'/'+item.anio+'</div>' +
-						'<h1 id="titulo" class="centrar">'+item.titulo+'</h1>' +
+						'<h2 id="titulo" class="centrar">'+item.titulo+'</h2>' +
 						'<p id="versiculo" class="versiculo centrar">'+item.versiculo+'</p>'+
 						'<div id="contedido" class="contenido-reflexion">'+item.contenido+'</div>'					
 						output.append(reflexion);
