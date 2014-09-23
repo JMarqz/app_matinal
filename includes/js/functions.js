@@ -41,10 +41,6 @@ $(function() {
     $('#menu').mmenu({
         position: "left"
     });
-
-    $('#menuCompartir').mmenu({
-        position: "right"
-    });
 });
 
 // ABRIR MENU DESLIZANDO DERECHA
@@ -66,85 +62,14 @@ function abrirURL(url){
     window.open(url, '_system');
 }
 
-// COMPARTIR EN TWITTER
-function compartirTwitter(){
+// COMPARTIR
+function compartir(){
     var versiculo = document.getElementById("versiculo").innerHTML;
-    versiculo = versiculo.replace(/<br>/g, " ");
-    
-    // Asegurarse que máximo son 144 caracteres
-    var len = versiculo.length;
-    alert(len);
+    var matinal = "\n- Matinal de Jóvenes";
+    var mensaje = versiculo.replace(/<br>/g, " ");
+    mensaje = mensaje + matinal;
 
-    window.plugins.socialsharing.shareViaTwitter(versiculo);
-}
-
-// COMPARTIR EN FACEBOOK
-function compartirFacebook(){
-    var versiculo = document.getElementById("versiculo").innerHTML;
-    versiculo = versiculo.replace(/<br>/g, " ");
-    var mensaje = versiculo + "\n" + "- Matinal de Jóvenes";
-    
-    //mensaje = mensaje.replace(/<br>/g, " ").replace(/<p>/g, "").replace(/<\/p>/g, "");
-    //var matinal = "- Matinal de Jóvenes";
-
-    window.plugins.socialsharing.shareViaFacebook(
-        'Message via Facebook',
-        null /* img */,
-        null /* url */,
-        function() {
-            alert("Compartido FB");
-        },
-        function(){
-            alert("Error FB");
-        }
-    );
-}
-
-// COMPARTIR POR CORREO
-function compartirCorreo(){
-    /*
-    var titulo = document.getElementById("titulo").innerHTML;
-    var versiculo = document.getElementById("versiculo").innerHTML;
-    var contedido = document.getElementById("contedido").innerHTML;
-    var copyrigth = document.getElementById("footer_reflexion").innerHTML;
-    */
-    //var mensaje = titulo + versiculo + contedido + copyrigth;
-    var mensaje = document.getElementById("reflexion");
-
-    window.plugins.socialsharing.shareViaEmail(
-        mensaje,
-        'Reflexión del Matinal de Jóvenes',
-        null, null, null, null,
-        function (){
-            alert("Correo enviado...");
-            // called when sharing worked, but also when the user cancelled sharing via email (I've found no way to detect the difference)
-        },
-        function (){
-            alert("No se puede compartir por correo en este momento.");
-            // called when sh*t hits the fan
-        }
-    );
-}
-
-// COMPARTIR EN FACEBOOK
-function compartirSMS(){
-    var versiculo = document.getElementById("versiculo").innerHTML;
-    versiculo = versiculo.replace(/<br>/g, " ");
-    var mensaje = versiculo + "\n" + "- Matinal de Jóvenes";
-    
-    //mensaje = mensaje.replace(/<br>/g, " ").replace(/<p>/g, "").replace(/<\/p>/g, "");
-    //var matinal = "- Matinal de Jóvenes";
-
-    window.plugins.socialsharing.shareViaSMS(
-        'My cool message',
-        null /* see the note below */,
-        function() {
-            alert('Compartido SMS: ');
-        },
-        function() {
-            alert('Error SMS: ');
-        }
-    );
+    window.plugins.socialsharing.share(mensaje, 'Matinal de Jóvenes');
 }
 
 // ABRIR TWITTER NATIVO 

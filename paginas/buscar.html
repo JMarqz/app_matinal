@@ -9,7 +9,7 @@
     <!-- JS -->
     <script src="../phonegap.js"></script>
     <script src="../includes/js/jquery-1.11.0.min.js"></script>
-    <script src="../includes/js/jquery.mobile-1.4.3.min.js"></script>
+    <script src="../includes/js/jquery.mobile-1.4.4.min.js"></script>
     <script src="../includes/js/jquery.mmenu.js"></script>
     <script src="../includes/js/functions.js"></script>
     
@@ -17,7 +17,7 @@
     <!-- CSS -->
     <link rel="stylesheet" type="text/css" href="../includes/css/modificaciones.css">
     <link rel="stylesheet" type="text/css" href="../includes/css/dark_theme.min.css">
-    <link rel="stylesheet" type="text/css" href="../includes/css/jquery.mobile.structure-1.4.3.min.css">
+    <link rel="stylesheet" type="text/css" href="../includes/css/jquery.mobile.structure-1.4.4.min.css">
     <link rel="stylesheet" type="text/css" href="../includes/css/jquery.mobile.icons.min.css" />
     <link rel="stylesheet" type="text/css" href="../includes/css/mmenu.css" />
 </head>
@@ -33,24 +33,13 @@
        </ul>
     </nav>
 
-    <nav id="menuCompartir">
-        <ul>
-            <li class="ui-state-disabled compartirTitulo"><a href="#">Compartir</a></li>
-            <li><a href="#" onClick="compartirTwitter()"><img class="icon-menu" src="includes/iconos/twitter.png" width="20px" height="20px">Twitter</a></li>
-            <li><a href="#" onClick="compartirFacebook()"><img class="icon-menu" src="includes/iconos/facebook.png" width="20px" height="20px">Facebook</a></li>
-            <li><a href="#" onClick="compartirCorreo()"><img class="icon-menu" src="includes/iconos/correo.png" width="20px" height="20px">Correo</a></li>
-            <li><a href="#" onClick="compartirSMS()"><img class="icon-menu" src="includes/iconos/sms.png" width="20px" height="18px">SMS</a></li>
-            <!--<li><a href="#" onClick=""><img class="icon-menu" src="includes/iconos/imprimir.png" width="20px" height="18px">Imprimir</a></li>-->
-        </ul>
-    </nav>
-
 <div data-role="page" id="page" data-theme="a">
     <header data-role="header" data-theme="a">
         <a href="#menu" data-icon="bars" data-iconpos="notext" class="ui-icon ui-nodisc-icon">Menu</a>
 
         <h1>Buscar</h1>
 
-        <a href="#" id="btnCompartir" onclick="compartir()" data-icon="action" data-iconpos="notext" class="ui-icon ui-nodisc-icon ui-state-disabled">Compartir</a>
+        <a href="#" id="btnCompartir" onClick="compartir()" data-icon="action" data-iconpos="notext" class="ui-icon ui-nodisc-icon ui-state-disabled">Compartir</a>
     </header>
     
     
