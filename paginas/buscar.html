@@ -26,11 +26,22 @@
 <body>
     <nav id="menu">
        <ul>
-          <li><a href="../index.html"><img class="icon-menu" src="../includes/iconos/hoy.png" width="20px" height="20px">Hoy</a></li>
-          <li class="Selected"><a href="#"><img class="icon-menu" src="../includes/iconos/search.png" width="20px" height="20px">Buscar</a></li>
-          <li><a href="autor.html"><img class="icon-menu" src="../includes/iconos/autor.png" width="20px" height="20px">Autor</a></li>
-          <li><a href="creditos.html"><img class="icon-menu" src="../includes/iconos/idea.png" width="20px" height="18px">Créditos</a></li>
+            <li><a href="../index.html"><img class="icon-menu" src="../includes/iconos/hoy.png" width="20px" height="20px">Hoy</a></li>
+            <li class="Selected"><a href="#"><img class="icon-menu" src="../includes/iconos/search.png" width="20px" height="20px">Buscar</a></li>
+            <li><a href="autor.html"><img class="icon-menu" src="../includes/iconos/autor.png" width="20px" height="20px">Autor</a></li>
+            <li><a href="creditos.html"><img class="icon-menu" src="../includes/iconos/idea.png" width="20px" height="18px">Créditos</a></li>
        </ul>
+    </nav>
+
+    <nav id="menuCompartir">
+        <ul>
+            <li class="ui-state-disabled compartirTitulo"><a href="#">Compartir</a></li>
+            <li><a href="#" onClick="compartirTwitter()"><img class="icon-menu" src="includes/iconos/twitter.png" width="20px" height="20px">Twitter</a></li>
+            <li><a href="#" onClick="compartirFacebook()"><img class="icon-menu" src="includes/iconos/facebook.png" width="20px" height="20px">Facebook</a></li>
+            <li><a href="#" onClick="compartirCorreo()"><img class="icon-menu" src="includes/iconos/correo.png" width="20px" height="20px">Correo</a></li>
+            <li><a href="#" onClick="compartirSMS()"><img class="icon-menu" src="includes/iconos/sms.png" width="20px" height="18px">SMS</a></li>
+            <!--<li><a href="#" onClick=""><img class="icon-menu" src="includes/iconos/imprimir.png" width="20px" height="18px">Imprimir</a></li>-->
+        </ul>
     </nav>
 
 <div data-role="page" id="page" data-theme="a">
@@ -51,8 +62,6 @@
             <button data-inline="true" onClick="buscar()" class="btn-buscar">Buscar</button>
         </div>
 
-        <button onClick="seleccionadorFechas()" data-inline="true">Datepicker</button>
-        
     </div>
 
     <div id="reflexion-buscada"></div>

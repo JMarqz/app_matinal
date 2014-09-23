@@ -1,4 +1,4 @@
-/* PERSONALIZACIÓN DE  ICONOS */
+/* PERSONALIZACIÓN DE ICONOS */
 .icon-menu{
     margin: 0 10px -5px 0;
 }
@@ -75,6 +75,18 @@
 .autor{
     text-align: justify;
     text-indent: 1cm;
+}
+
+/* COMPARTIR */
+.compartirTitulo {
+    text-align: center!important;
+    background-color: rgb(5, 5, 5)!important;
+    height: 43px;
+    border-bottom: 1px solid rgba(0, 0, 0, 1)!important;
+}
+
+.mm-menu > ul {
+    padding: 0px 0 40px 0!important;
 }
 
 /* SECCIÓN BUSCAR */
