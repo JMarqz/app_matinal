@@ -91,6 +91,7 @@
 
 .ui-input-text input{
     text-align: center!important;
+    text-shadow: none!important;
 }
 
 .btn-buscar{
