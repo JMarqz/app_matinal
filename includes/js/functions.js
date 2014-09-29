@@ -63,8 +63,12 @@ function abrirURL(url){
 // COMPARTIR
 function compartir(){
     var reflexion = document.getElementById("reflexion").innerHTML;
-    var fecha = document.getElementById("fecha").innerHTML;
-    var asunto = "Reflexión del Matinal de Jóvenes del " + fecha;
+
+    if (reflexion == null) {
+        reflexion = document.getElementById("reflexion-buscada").innerHTML;
+    };
+
+    var asunto = "Reflexión del Matinal de Jóvenes";
     
     window.plugins.socialsharing.shareViaEmail(
         reflexion, 
