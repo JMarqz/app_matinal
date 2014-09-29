@@ -14,11 +14,10 @@ function onDeviceReady() {
 window.onload = function() {
     var cargando = document.getElementById("cargando");
     var reflexion = document.getElementById("reflexion");
-    //var reflexionBuscar = document.getElementById('fecha-buscar');
+    var reflexionBuscar = document.getElementById('fecha-buscar');
 
     if (cargando != null) { cargando.style.display = "none" };
     if (reflexion != null) { reflexion.style.display = "block" };
-    /*
     if (reflexionBuscar != null) {
         var hoy = new Date();
 
@@ -33,7 +32,6 @@ window.onload = function() {
 
         $('#fecha-buscar').attr('value', hoy);
     };
-    */
 }
 
 // CONFIGURACIÓN MENU
@@ -64,12 +62,29 @@ function abrirURL(url){
 
 // COMPARTIR
 function compartir(){
-    var versiculo = document.getElementById("versiculo").innerHTML;
-    var matinal = "\n- Matinal de Jóvenes";
-    var mensaje = versiculo.replace(/<br>/g, " ");
-    mensaje = mensaje + matinal;
+    var reflexion = document.getElementById("reflexion").innerHTML;
+    //var versiculo = document.getElementById("versiculo").innerHTML;
+    //var matinal = "\n- Matinal de Jóvenes";
+    //var mensaje = versiculo.replace(/<br>/g, " ");
+    //mensaje = mensaje + matinal;
 
-    window.plugins.socialsharing.share(mensaje, 'Matinal de Jóvenes');
+    //window.plugins.socialsharing.share(reflexion, 'Matinal de Jóvenes');
+
+    window.plugins.socialsharing.shareViaEmail(
+        reflexion, // can contain HTML tags
+        'Matinal de Jóvenes'
+        /*
+        null, // TO: must be null or an array
+        null, // CC: must be null or an array
+        null, // BCC: must be null or an array
+        null, // FILES: can be null, a string, or an array
+        null, // called when sharing worked, but also when the user cancelled sharing via email (I've found no way to detect the difference)
+        function (){
+            //Something
+            // called when sh*t hits the fan
+        } 
+        */
+    );
 }
 
 // ABRIR TWITTER NATIVO 
@@ -129,7 +144,7 @@ function buscar(){
 }
 
 function cargarReflexion(dia, mes, anio){
-    var output = $('#reflexion-buscada');
+    var output = $('#reflexion');
 
     output.html("<p class='centrar'>Buscando...</p>");
 
