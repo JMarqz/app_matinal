@@ -78,9 +78,11 @@
 }
 
 /* SECCIÓN BUSCAR */
-#reflexion-buscada{
+/*
+.reflexion-buscada{
     padding: 20px;
 }
+*/
 
 .ui-input-text{
     background: rgba(0, 0, 0, 0.2)!important;

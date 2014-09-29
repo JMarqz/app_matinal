@@ -63,11 +63,6 @@ function abrirURL(url){
 // COMPARTIR
 function compartir(){
     var reflexion = document.getElementById("reflexion").innerHTML;
-
-    if (reflexion == null) {
-        reflexion = document.getElementById("reflexion-buscada").innerHTML;
-    };
-
     var asunto = "Reflexión del Matinal de Jóvenes";
     
     window.plugins.socialsharing.shareViaEmail(
@@ -133,7 +128,7 @@ function buscar(){
 }
 
 function cargarReflexion(dia, mes, anio){
-    var output = $('#reflexion-buscada');
+    var output = $('#reflexion');
 
     output.html("<p class='centrar'>Buscando...</p>");
 
