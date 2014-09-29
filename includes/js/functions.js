@@ -10,7 +10,7 @@ function onDeviceReady() {
     StatusBar.styleLightContent();
 }
 
-// CARGANDO...
+// UNA VEZ CARGADA LA PÁGINA
 window.onload = function() {
     var cargando = document.getElementById("cargando");
     var reflexion = document.getElementById("reflexion");
@@ -63,27 +63,12 @@ function abrirURL(url){
 // COMPARTIR
 function compartir(){
     var reflexion = document.getElementById("reflexion").innerHTML;
-    //var versiculo = document.getElementById("versiculo").innerHTML;
-    //var matinal = "\n- Matinal de Jóvenes";
-    //var mensaje = versiculo.replace(/<br>/g, " ");
-    //mensaje = mensaje + matinal;
-
-    //window.plugins.socialsharing.share(reflexion, 'Matinal de Jóvenes');
-
+    var fecha = document.getElementById("fecha").innerHTML;
+    var asunto = "Reflexión del Matinal de Jóvenes del " + fecha;
+    
     window.plugins.socialsharing.shareViaEmail(
-        reflexion, // can contain HTML tags
-        'Matinal de Jóvenes'
-        /*
-        null, // TO: must be null or an array
-        null, // CC: must be null or an array
-        null, // BCC: must be null or an array
-        null, // FILES: can be null, a string, or an array
-        null, // called when sharing worked, but also when the user cancelled sharing via email (I've found no way to detect the difference)
-        function (){
-            //Something
-            // called when sh*t hits the fan
-        } 
-        */
+        reflexion, 
+        asunto
     );
 }
 
@@ -144,7 +129,7 @@ function buscar(){
 }
 
 function cargarReflexion(dia, mes, anio){
-    var output = $('#reflexion');
+    var output = $('#reflexion-buscada');
 
     output.html("<p class='centrar'>Buscando...</p>");
 
