@@ -71,6 +71,54 @@ function compartir(){
     );
 }
 
+//  PROBANDO DATEPICKERS
+function seleccionadorFechas(){
+    alert("Entrando al método Seleccionar Fechas");
+
+    var options = {
+        date: new Date(),
+        mode: 'date'
+    };
+
+    alert("Previo lanzar datePicker");
+    datePicker.show(options, function(date){
+        alert("date result " + date);
+    });
+
+    alert("Saliendo del método");
+}
+
+function seleccionadorFechas2(){
+    alert("Entrando al método 2");
+
+    
+    datePicker.show({
+        "mode" : "date",
+        "date" : new Date("2012/09/28 03:04:05")
+        },
+        function(a){
+            document.getElementById("dateButton").innerHTML = new Date(a).toString()
+            alert("Fecha : " + a);
+        }
+    );
+
+    alert("Saliendo del método 2");
+}
+
+function seleccionadorFechas3(){
+    alert("Entrando al método 3");
+
+    
+    window.plugins.datePicker.show({
+        date : myNewDate,
+        mode : 'date'
+    }, function(returnDate) {
+        alert("Fecha: " + returnDate);
+    });
+
+    alert("Saliendo del método 3");
+}
+
 // ABRIR TWITTER NATIVO 
 function abrirTwitter(userName){
     var plataforma = device.platform;
