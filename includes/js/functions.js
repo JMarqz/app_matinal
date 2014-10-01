@@ -73,21 +73,51 @@ function compartir(){
 
 //  PROBANDO DATEPICKERS
 function seleccionadorFechas(){
+    var hoy = new Date();
+    var dia = hoy.getDate();
+    var mes = hoy.getMonth() + 1;
+    var anio = hoy.getFullYear();
+
+    if (mes < 10) { mes = "0"+mes };
+    if (dia < 10) { dia = "0"+dia };
+
+    hoy = anio + "-" + mes + "-" + dia;
+
+    alert(hoy);
+
     var options = {
-        date: new Date(),
+        date: hoy,
         mode: 'date',
         minDate: '2014-01-01',
         maxDate: '2014-12-31',
-        doneButtonLabel: 'Ok',
-        doneButtonColor: '#00FF00',
-        cancelButtonLabel: 'Cancelar',
-        cancelButtonColor: '#FFFF00',
         x: '20',
         y: '20'
     };
 
     datePicker.show(options, function(date){
-        document.getElementById("dateButton").innerHTML = new Date(date).toString()
+        document.getElementById("dateButton").innerHTML = new Date(date).toString();
+        alert(date);
+    });
+}
+
+//  PROBANDO DATEPICKERS
+function seleccionadorFechas2(){
+    var hoy = new Date();
+    
+    alert(hoy);
+
+    var options = {
+        date: hoy,
+        mode: 'date',
+        minDate: '2014-01-01',
+        maxDate: '2014-12-31',
+        x: '20',
+        y: '20'
+    };
+
+    datePicker.show(options, function(date){
+        document.getElementById("dateButton").innerHTML = new Date(date).toString();
+        alert(date);
     });
 }
 
