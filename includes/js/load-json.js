@@ -16,7 +16,7 @@ $(document).ready(function(){
 			//NO EXISTE LA REFLEXIÓN EN LA BASE DE DATOS
 			if (data==null || data=="Error") {
 				var errorMessage = '<h1 class="centrar">:(</h1>'+
-				'<h4 class="centrar">La reflexión de hoy no se encuentra disponible.<br>Por favor, intente más tarde.</h4>';
+				'<h4 class="centrar">La reflexión de hoy no se encuentra disponible.<br>Por favor, intenta más tarde.</h4>';
 
 				output.append(errorMessage);
 			}
