@@ -52,8 +52,13 @@
         </div>
 
         <div data-role="controlgroup" data-type="horizontal" class="centrar">
-            <input id="fecha-test" type="text" placeholder="Seleccionar fecha" class="input-buscar" data-wrapper-class="controlgroup-textinput ui-btn" onfocus="(this.type='date')">
-            <button data-inline="true" onClick="test()" class="btn-buscar">Buscar</button>
+            <input id="fecha-test" type="text" placeholder="Seleccionar fecha" class="input-buscar" data-wrapper-class="controlgroup-textinput ui-btn" onfocus="(this.type='date')" onBlur="(this.type='text')">
+            <button data-inline="true" onClick="test()" class="btn-buscar">onFocus + onBlur</button>
+        </div>
+
+        <div data-role="controlgroup" data-type="horizontal" class="centrar">
+            <input id="fecha-test2" placeholder="Fecha" type="text" class="input-buscar" data-wrapper-class="controlgroup-textinput ui-btn" onfocus="this.type='date';this.setAttribute('onfocus','');this.blur();this.focus();">
+            <button data-inline="true" onClick="test()" class="btn-buscar">onFocus(onBlur...)</button>
         </div>
 
         <div id="reflexion"></div>
