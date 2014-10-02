@@ -89,18 +89,16 @@ function seleccionadorFechas(){
         date: hoy,
         mode: 'date',
         minDate: '2014-01-01',
-        maxDate: '2014-12-31',
-        x: '20',
-        y: '20'
+        maxDate: '2014-12-31'
     };
 
     datePicker.show(options, function(date){
         document.getElementById("dateButton").innerHTML = new Date(date).toString();
+        $('#fecha-buscar').attr('value', date);
         alert(date);
     });
 }
 
-//  PROBANDO DATEPICKERS
 function seleccionadorFechas2(){
     var hoy = new Date();
     
@@ -110,14 +108,25 @@ function seleccionadorFechas2(){
         date: hoy,
         mode: 'date',
         minDate: '2014-01-01',
-        maxDate: '2014-12-31',
-        x: '20',
-        y: '20'
+        maxDate: '2014-12-31'
     };
 
     datePicker.show(options, function(date){
         document.getElementById("dateButton").innerHTML = new Date(date).toString();
+        $('#fecha-buscar').attr('value', date);
         alert(date);
+    });
+}
+
+function seleccionadorFechas3(){
+    var options = {
+        date: new Date(),
+        mode: 'date',
+    };
+
+    datePicker.show(options, function(date){
+        document.getElementById("dateButton").innerHTML = new Date(date).toString();
+        $('#fecha-buscar').attr('value', date);
     });
 }
 
