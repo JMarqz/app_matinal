@@ -71,11 +71,6 @@ function compartir(){
     );
 }
 
-function test(){
-    var fechaTest = $("#fecha-test").val();
-    alert(fechaTest);
-}
-
 // ABRIR TWITTER NATIVO 
 function abrirTwitter(userName){
     var plataforma = device.platform;
