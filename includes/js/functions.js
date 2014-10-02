@@ -71,63 +71,10 @@ function compartir(){
     );
 }
 
-//  PROBANDO DATEPICKERS
-function seleccionadorFechas(){
-    var fechaMin = new Date(2014, 12, 31);
-    var fechaMax = new Date(2014, 1, 31);
-
-    var options = {
-        date: new Date(),
-        mode: 'date',
-        minDate: fechaMin,
-        maxDate: fechaMax
-    };
-
-    datePicker.show(options, function(date){
-        var fechaArr = date.split(" ");
-        var dia = fechaArr[2];
-        var mes = saberMes(fechaArr[1]);
-        var anio = fechaArr[3];
-
-        var fecha = anio + "-" + mes + "-" + dia;
-
-        document.getElementById("dateButton").innerHTML = new Date(fecha).toString();
-        $('#fecha-buscar').attr('value', fecha);
-    });
+function test(){
+    var fechaTest = $("#fecha-test").val();
+    alert(fechaTest);
 }
-
-function saberMes(nombreMes){
-    var mes = "";
-
-    if (nombreMes == "Jan") {
-        mes = "01";
-    } else if(nombreMes == "Feb"){
-        mes = "02";
-    } else if(nombreMes == "Mar"){
-        mes = "03";
-    } else if(nombreMes == "Apr"){
-        mes = "04";
-    } else if(nombreMes == "May"){
-        mes = "05";
-    } else if(nombreMes == "Jun"){
-        mes = "06";
-    } else if(nombreMes == "Jul"){
-        mes = "07";
-    } else if(nombreMes == "Aug"){
-        mes = "08";
-    } else if(nombreMes == "Sep"){
-        mes = "09";
-    } else if(nombreMes == "Oct"){
-        mes = "10";
-    } else if(nombreMes == "Nov"){
-        mes = "11";
-    } else if(nombreMes == "Dec"){
-        mes = "12";
-    }
-
-    return mes;
-}
-
 
 // ABRIR TWITTER NATIVO 
 function abrirTwitter(userName){

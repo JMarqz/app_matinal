@@ -47,15 +47,14 @@
         <label class="centrar" for="fecha-buscar">Selecciona la fecha a buscar</label>
 
         <div data-role="controlgroup" data-type="horizontal" class="centrar">
-            <input id="fecha-buscar" name="fecha-buscar" class="input-buscar" data-wrapper-class="controlgroup-textinput ui-btn"type="date" min="2014-01-01" max="2014-12-31" value="0000-00-00">
+            <input id="fecha-buscar" name="fecha-buscar" class="input-buscar" data-wrapper-class="controlgroup-textinput ui-btn"type="date" min="2014-01-01" max="2014-12-31" placeholder="Hola">
             <button data-inline="true" onClick="buscar()" class="btn-buscar">Buscar</button>
         </div>
 
-        <div class ="centrar">
-            <button data-inline="true" onClick="seleccionadorFechas()" >DatePicker</button>
+        <div data-role="controlgroup" data-type="horizontal" class="centrar">
+            <input id="fecha-test" type="text" placeholder="Seleccionar fecha" class="input-buscar" data-wrapper-class="controlgroup-textinput ui-btn" onfocus="(this.type='date')">
+            <button data-inline="true" onClick="test()" class="btn-buscar">Buscar</button>
         </div>
-
-        <span id="dateButton"></span>
 
         <div id="reflexion"></div>
     </div>
