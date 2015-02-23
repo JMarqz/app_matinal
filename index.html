@@ -1,69 +1,66 @@
 <!DOCTYPE html> 
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+        <title>Matinal</title>
 
-    <title>Matinal</title>
-
-    <!-- JS -->
-    <script src="phonegap.js"></script>
-    <script src="includes/js/jquery-1.11.0.min.js"></script>
-    <script src="includes/js/jquery.mobile-1.4.4.min.js"></script>
-    <script src="includes/js/load-json.js"></script>
-    <script src="includes/js/jquery.mmenu.js"></script>
-    <script src="includes/js/functions.js"></script>
-    
-
-    <!-- CSS -->
-    <link rel="stylesheet" type="text/css" href="includes/css/modificaciones.css">
-    <link rel="stylesheet" type="text/css" href="includes/css/dark_theme.min.css">
-    <link rel="stylesheet" type="text/css" href="includes/css/jquery.mobile.structure-1.4.4.min.css">
-    <link rel="stylesheet" type="text/css" href="includes/css/jquery.mobile.icons.min.css" />
-    <link rel="stylesheet" type="text/css" href="includes/css/animation.css">
-    <link rel="stylesheet" type="text/css" href="includes/css/fontello.css">
-    <link rel="stylesheet" type="text/css" href="includes/css/mmenu.css" />
-</head>
+        <!-- CSS -->
+        <link rel="stylesheet" type="text/css" href="includes/css/modificaciones.css">
+        <link rel="stylesheet" type="text/css" href="includes/css/dark_theme.min.css">
+        <link rel="stylesheet" type="text/css" href="includes/css/jquery.mobile.structure-1.4.4.min.css">
+        <link rel="stylesheet" type="text/css" href="includes/css/jquery.mobile.icons.min.css" />
+        <link rel="stylesheet" type="text/css" href="includes/css/animation.css">
+        <link rel="stylesheet" type="text/css" href="includes/css/fontello.css">
+        <link rel="stylesheet" type="text/css" href="includes/css/mmenu.css" />
+    </head>
 
 
-<body>
-    <nav id="menu">
-       <ul>
-            <li class="Selected"><a href="#"><img class="icon-menu" src="includes/iconos/hoy.png" width="20px" height="20px">Hoy</a></li>
-            <li><a href="paginas/buscar.html"><img class="icon-menu" src="includes/iconos/buscar.png" width="20px" height="20px">Buscar</a></li>
-            <li><a href="paginas/autor.html"><img class="icon-menu" src="includes/iconos/autor.png" width="20px" height="20px">Autor</a></li>
-            <li><a href="paginas/creditos.html"><img class="icon-menu" src="includes/iconos/idea.png" width="20px" height="18px">Créditos</a></li>
-       </ul>
-    </nav>
+    <body>
+        <nav id="menu">
+           <ul>
+                <li class="Selected"><a href="#"><img class="icon-menu" src="includes/iconos/hoy.png" width="20px" height="20px">Hoy</a></li>
+                <li><a href="paginas/buscar.html"><img class="icon-menu" src="includes/iconos/buscar.png" width="20px" height="20px">Buscar</a></li>
+                <li><a href="paginas/autor.html"><img class="icon-menu" src="includes/iconos/autor.png" width="20px" height="20px">Autor</a></li>
+                <li><a href="paginas/creditos.html"><img class="icon-menu" src="includes/iconos/idea.png" width="20px" height="18px">Créditos</a></li>
+           </ul>
+        </nav>
 
-<div data-role="page" id="page" data-theme="a">
-	<div data-role="header" data-theme="a">
-        <!-- BOTÓN PERSONALIZADO -->
-        <a href="#menu" data-icon="bars" data-iconpos="notext" class="ui-icon ui-nodisc-icon ui-icon-mymenu">Menu</a>
-        
-        <h1>Hoy</h1>
+        <div data-role="page" id="page" data-theme="a">
+        	<div data-role="header" data-theme="a">
+                <!-- BOTÓN PERSONALIZADO -->
+                <a href="#menu" data-icon="bars" data-iconpos="notext" class="ui-icon ui-nodisc-icon ui-icon-mymenu">Menu</a>
+                
+                <h1>Hoy</h1>
 
-        <div data-type="horizontal" data-role="controlgroup" class="ui-btn-right">
-            <!-- Botón para recargar página -->
-            <a href="#" id="btnActualizar" data-role="button" onclick="actualizar()" data-icon="refresh" data-iconpos="notext" class="ui-icon ui-nodisc-icon">Actualizar</a>
-            <!-- Botón para recargar compartir -->
-            <a href="#" id="btnCompartir" onClick="compartir()" data-role="button" data-icon="action" data-iconpos="notext" class="ui-icon ui-nodisc-icon ui-state-disabled">Compartir</a>
+                <div data-type="horizontal" data-role="controlgroup" class="ui-btn-right">
+                    <!-- Botón para recargar página -->
+                    <a href="#" id="btnActualizar" data-role="button" onclick="actualizar()" data-icon="refresh" data-iconpos="notext" class="ui-icon ui-nodisc-icon">Actualizar</a>
+                    <!-- Botón para compartir -->
+                    <a href="#" id="btnCompartir" onClick="compartir()" data-role="button" data-icon="action" data-iconpos="notext" class="ui-icon ui-nodisc-icon ui-state-disabled">Compartir</a>
+                </div>
+                
+                <!-- Agregar botón para audio... EN ALGÚN FUTURO
+                <a href="" data-icon="refresh" data-iconpos="notext">Escuchar</a>
+                 -->
+        	</div>
+            
+        	<div data-role="content" id="content">
+                <div id="cargando" class="centrar">
+                    <h4>Cargando...</h4>
+                    <i class='icon-spin5 animate-spin'></i>
+                </div>
+                
+                <div id="reflexion" style="display:none;"></div>
+            </div>
         </div>
-        
-        <!-- Agregar botón para audio... EN ALGÚN FUTURO
-        <a href="" data-icon="refresh" data-iconpos="notext">Escuchar</a>
-         -->
-	</div>
-    
-	<div data-role="content" id="content">
-        <div id="cargando">
-            <h4>Cargando...</h4>
-            <i class='icon-spin5 animate-spin'></i>
-        </div>
-        
-        <div id="reflexion" style="display:none;"></div>
-    </div>
-</div>
 
-</body>
+        <!-- JS -->
+        <script src="phonegap.js"></script>
+        <script src="includes/js/jquery-1.11.0.min.js"></script>
+        <script src="includes/js/jquery.mobile-1.4.4.min.js"></script>
+        <script src="includes/js/load-json.js"></script>
+        <script src="includes/js/jquery.mmenu.js"></script>
+        <script src="includes/js/functions.js"></script>
+    </body>
 </html>

@@ -2,6 +2,7 @@
 a {
     -webkit-touch-callout: none;
     -webkit-user-select: none;
+    text-decoration: none;
 }
 
 /* PERSONALIZACIÓN DE ICONOS */
@@ -43,44 +44,37 @@ a {
     font-style:italic;
 }
 
-.contenido-reflexion{
+#reflexion p, #autor p {
     text-align: justify;
     text-indent: 1cm;
 }
 
 .creditos-reflexion{
-    text-align: right;
+    text-align: right!important;
     font-size: 12px;
     font-style: italic;
 }
 
+.margen-superior{
+    margin-top: 10px;
+}
+
 /* ALINEAR */
 .centrar{
-    text-align:center;
+    text-align:center!important;
 }
 
 .izquierda{
-    text-align:left;
+    text-align:left!important;
 }
 
 .derecha{
-    text-align:right;
+    text-align:right!important;
 }
 
 /* OCULTAR */
 .ocultar{
     display:none;
-}
-
-/* CARGA */
-#cargando {
-    text-align: center!important;
-}
-
-/* SECCION AUTOR */
-.autor{
-    text-align: justify;
-    text-indent: 1cm;
 }
 
 /* SECCIÓN BUSCAR */

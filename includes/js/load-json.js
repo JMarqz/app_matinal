@@ -61,8 +61,8 @@ $(document).ready(function(){
 		},
 		error: function(){
 			var errorConexion = '<h1 class="centrar">:(</h1>' + 
-			'<h4 class="centrar">¡Ocurrió un error al intentar conectarse al servidor!'+
-			'<br>Intenta volver a cargar la reflexión en el botón de actualizar.</h4>';
+			'<h4 class="centrar">No se pudo establecer conexión con el servidor.'+
+			'<br>Verifica tu conexión a internet e intenta recargar la reflexión.</h4>';
 
 			output.append(errorConexion);
 				
