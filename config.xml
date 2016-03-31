@@ -23,23 +23,26 @@
     
     <!-- Plataforms -->
     <gap:platform name="ios" />
+    <gap:platform name="android" />
 
 	
     <!-- Plugins -->
-    <gap:plugin name="org.apache.cordova.device"            version="0.2.12"/>
-    <gap:plugin name="org.apache.cordova.splashscreen"      version="0.3.4" />
-    <gap:plugin name="org.apache.cordova.inappbrowser"      version="0.5.2" />
-    <gap:plugin name="com.phonegap.plugin.statusbar"        version="1.1.0" />
-    <gap:plugin name="com.ohh2ahh.plugins.appavailability"  version="0.3.1" /> 
-    <gap:plugin name="nl.x-services.plugins.socialsharing"  version="4.3.8" />
+    <plugin name="org.apache.cordova.device" spec="0.3.0" source="pgb" />
+    <plugin name="org.apache.cordova.splashscreen" spec="1.0.0" source="pgb" />
+    <plugin name="org.apache.cordova.inappbrowser" spec="0.6.0" source="pgb" />
+    <plugin name="com.phonegap.plugin.statusbar" spec="1.1.0" source="pgb" />
+    <plugin name="com.ohh2ahh.plugins.appavailability" spec="0.3.1" source="pgb" />
+    <plugin name="nl.x-services.plugins.socialsharing" spec="4.3.8" source="pgb" />
 
     
     <!-- Preferences -->
-    <preference name="phonegap-version"         value="3.7.0" />
+    <preference name="phonegap-version"         value="cli-5.2.0" />
     <preference name="orientation"              value="portrait" />
     <preference name="prerendered-icon"         value="true" />
     <preference name="DisallowOverscroll"       value="true"/>
     <preference name="AutoHideSplashScreen"     value="false" />
+    <preference name="android-minSdkVersion"    value="7" />
+    <preference name="android-targetSdkVersion" value="11" />
     
 
     <!-- Permissions -->
