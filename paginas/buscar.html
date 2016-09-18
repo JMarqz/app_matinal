@@ -9,35 +9,22 @@
         <script src="../phonegap.js"></script>
         <script src="../includes/js/jquery-1.11.0.min.js"></script>
         <script src="../includes/js/jquery.mobile-1.4.4.min.js"></script>
-        <script src="../includes/js/jquery.mmenu.js"></script>
-        <script src="../includes/js/functions.js"></script>
+        <script src="../includes/js/main.js"></script>
 
         <!-- CSS -->
-        <link rel="stylesheet" type="text/css" href="../includes/css/modificaciones.css">
-        <link rel="stylesheet" type="text/css" href="../includes/css/dark_theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../includes/css/theme-blanco.min.css">
         <link rel="stylesheet" type="text/css" href="../includes/css/jquery.mobile.structure-1.4.4.min.css">
         <link rel="stylesheet" type="text/css" href="../includes/css/jquery.mobile.icons.min.css" />
-        <link rel="stylesheet" type="text/css" href="../includes/css/mmenu.css" />
+        <link rel="stylesheet" type="text/css" href="../includes/css/style.css">
     </head>
 
 
     <body>
-        <nav id="menu">
-           <ul>
-                <li><a href="../index.html"><img class="icon-menu" src="../includes/iconos/hoy.png" width="20px" height="20px">Hoy</a></li>
-                <li class="Selected"><a href="#"><img class="icon-menu" src="../includes/iconos/buscar.png" width="20px" height="20px">Buscar</a></li>
-                <li><a href="autor.html"><img class="icon-menu" src="../includes/iconos/autor.png" width="20px" height="20px">Autor</a></li>
-                <li><a href="creditos.html"><img class="icon-menu" src="../includes/iconos/idea.png" width="20px" height="18px">Créditos</a></li>
-           </ul>
-        </nav>
-
         <div id="page" data-role="page" data-theme="a">
             <header data-role="header" data-theme="a">
-                <a href="#menu" data-icon="bars" data-iconpos="notext" class="ui-icon ui-nodisc-icon">Menu</a>
-
                 <h1>Buscar</h1>
 
-                <a href="#" id="btnCompartir" onClick="compartir()" data-icon="action" data-iconpos="notext" class="ui-icon ui-nodisc-icon ui-state-disabled">Compartir</a>
+                <!-- <a href="#" id="btnCompartir" onClick="compartir()" data-icon="action" data-iconpos="notext" class="ui-icon ui-nodisc-icon ui-state-disabled">Compartir</a> -->
             </header>
             
             
@@ -51,6 +38,15 @@
 
                 <div id="reflexion" class="margen-superior"></div>
             </div>
+
+            <nav class="navbar-menu">
+               <ul>
+                    <li><a href="../index.html"><img class="icon-menu" src="../includes/iconos/hoy.png" width="20px" height="20px">Hoy</a></li>
+                    <li class="selected"><a href="#"><img class="icon-menu" src="../includes/iconos/buscar.png" width="20px" height="20px">Buscar</a></li>
+                    <li><a href="autor.html"><img class="icon-menu" src="../includes/iconos/autor.png" width="20px" height="20px">Autor</a></li>
+                    <li><a href="info.html"><img class="icon-menu" src="../includes/iconos/idea.png" width="20px" height="18px">Info</a></li>
+               </ul>
+            </nav>
         </div>
     </body>
 </html>

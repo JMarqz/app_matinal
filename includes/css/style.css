@@ -1,0 +1,180 @@
+@charset "UTF-8";
+body, .ui-header .ui-title {
+  font-family: 'Avenir-Light', sans-serif;
+  font-weight: normal; }
+
+#fecha {
+  font-family: 'Avenir-Book', sans-serif;
+  font-weight: normal; }
+
+#versiculo {
+  font-family: 'Avenir-BookOblique', sans-serif;
+  font-weight: normal; }
+
+#titulo {
+  font-family: 'Avenir-Black', sans-serif;
+  font-weight: normal; }
+
+#reflexion {
+  font-family: Georgia, serif; }
+
+body {
+  font-size: 14px;
+  line-height: 24px; }
+
+.ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper, .ui-header {
+  background-color: #F9F9F9; }
+
+#content {
+  padding: 24px 20px 78px 20px; }
+
+a {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  text-decoration: none; }
+
+.separador-chico {
+  width: 30px;
+  height: 1px;
+  background-color: #00E0FF; }
+
+.centrar {
+  text-align: center !important; }
+
+.izquierda {
+  text-align: left !important; }
+
+.derecha {
+  text-align: right !important; }
+
+.ocultar {
+  display: none; }
+
+/* PERSONALIZACIÓN DE ICONOS */
+.ui-nodisc-icon {
+  box-shadow: none !important;
+  background: none !important;
+  border: none !important; }
+
+.navbar-menu {
+  z-index: 2;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background-image: url("../img/menu-background.png");
+  border-top: 1px solid #E7EAED;
+  text-align: center; }
+  .navbar-menu ul {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    list-style: none; }
+    .navbar-menu ul:after {
+      content: '';
+      display: block;
+      clear: both; }
+    .navbar-menu ul li {
+      display: inline-block;
+      width: 25%;
+      float: left; }
+      .navbar-menu ul li a {
+        position: relative;
+        display: block;
+        padding: 10px 0 9px 0;
+        font-size: 12px;
+        line-height: 15px;
+        font-weight: normal; }
+        .navbar-menu ul li a:after {
+          content: '';
+          display: block;
+          position: absolute;
+          width: 1px;
+          height: calc(100% - 20px);
+          right: 0;
+          top: 10px;
+          background-color: #E7EAED; }
+      .navbar-menu ul li a, .navbar-menu ul li a:hover, .navbar-menu ul li a:visited, .navbar-menu ul li a:focus {
+        color: #111; }
+      .navbar-menu ul li.selected a {
+        font-family: 'Avenir-Heavy', sans-serif; }
+  .navbar-menu .icon-menu {
+    display: block;
+    margin-right: auto;
+    margin-left: auto; }
+
+.navbar-menu, .ui-header {
+  background-repeat: no-repeat;
+  background-position: center;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover; }
+
+.ui-header {
+  background-image: url("../img/header-background.png");
+  border-top: 0;
+  border-bottom: 1px solid #D9DEE3; }
+  .ui-header .ui-title {
+    min-height: 0;
+    padding-top: 18px;
+    padding-bottom: 17px;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase; }
+
+#fecha {
+  opacity: 0.5;
+  font-size: 10px;
+  line-height: 17px;
+  text-transform: uppercase; }
+
+#titulo {
+  margin-top: 10px;
+  margin-bottom: 11px;
+  font-size: 30px;
+  line-height: 38px;
+  letter-spacing: -0.5px; }
+
+#versiculo {
+  opacity: 0.7;
+  margin-top: 0;
+  margin-bottom: 18px; }
+
+#reflexion ul {
+  text-indent: 0px; }
+#reflexion p:last-child {
+  margin-bottom: 0; }
+
+#contedido {
+  margin-top: 18px;
+  margin-bottom: 16px;
+  padding-bottom: 23px;
+  border-bottom: 1px solid rgba(187, 197, 206, 0.5); }
+
+#footer_reflexion {
+  margin-top: 0; }
+
+.margen-superior {
+  margin-top: 15px; }
+
+.ui-input-text {
+  background: rgba(0, 0, 0, 0.2) !important;
+  border-radius: 10px 0px 0px 10px !important;
+  color: #FFF !important;
+  width: 100px; }
+  .ui-input-text input {
+    text-align: center !important;
+    text-shadow: none !important; }
+
+.btn-buscar {
+  border-radius: 0px 10px 10px 0px !important;
+  border-color: #949494 !important; }
+
+.controlgroup-textinput {
+  padding-top: 0.22em !important;
+  padding-bottom: 0.22em !important;
+  border-color: #3A3A3A !important; }
+
+.ui-controlgroup-label {
+  text-align: center !important; }
