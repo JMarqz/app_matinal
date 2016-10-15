@@ -34,19 +34,33 @@ window.onload = function() {
     };
 }
 
-// Actualizar
+// CONFIGURACIÓN MENU
+$(function() {
+    $('#menu').mmenu({
+        position: "left"
+    });
+});
+
+// ABRIR MENU DESLIZANDO DERECHA
+$(document).on('pageinit',function(){
+    $("#page").on("swiperight",function(){
+        $("#menu").trigger( "open.mm" );
+    });
+});
+
+// ACTUALIZAR
 function actualizar(){
     document.getElementById("reflexion").style.display = "none";
     document.getElementById("cargando").style.display = "block";
     window.location.reload();
 }
 
-// Abrir URL
+// ABRIR URL
 function abrirURL(url){
     window.open(url, '_system');
 }
 
-// Compartir
+// COMPARTIR
 function compartir(){
     var reflexion = document.getElementById("reflexion").innerHTML;
     var asunto = "Reflexión del Matinal de Jóvenes";
@@ -57,7 +71,7 @@ function compartir(){
     );
 }
 
-// Abrir Twitter app nativa
+// ABRIR TWITTER NATIVO 
 function abrirTwitter(userName){
     var plataforma = device.platform;
     var twitter;
@@ -79,7 +93,7 @@ function abrirTwitter(userName){
     });
 }
 
-// Abrir Facebook app nativa
+// ABRIR FACEBOOK
 function abrirFB(userName){
     var plataforma = device.platform;
     var fb;
@@ -101,7 +115,7 @@ function abrirFB(userName){
     });
 }
 
-// Buscar
+// BUSCAR
 function buscar(){
     $("#btnCompartir").addClass("ui-state-disabled");
     var fechaSeleccionada = $("#fecha-buscar").val();
@@ -153,7 +167,7 @@ function cargarReflexion(dia, mes, anio){
                     if (i==0) {
                         var reflexion = '<div id="fecha" class="derecha">'+item.dia+'/'+mes+'/'+item.anio+'</div>' +
                         '<h2 id="titulo" class="centrar">'+item.titulo+'</h2>' +
-                        '<p id="versiculo" class="versiculo">'+item.versiculo+'</p>'+
+                        '<p id="versiculo" class="versiculo centrar">'+item.versiculo+'</p>'+
                         '<div id="contedido" class="contenido-reflexion">'+item.contenido+'</div>'                    
                         output.html(reflexion);
 
