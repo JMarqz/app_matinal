@@ -29,14 +29,16 @@
             
             
             <div id="content" data-role="content">
-                <label class="centrar" for="fecha-buscar">Introduce la fecha a buscar</label>
-
-                <div data-role="controlgroup" data-type="horizontal" class="centrar">
+                <div data-role="controlgroup" data-type="horizontal" class="contenedor-busqueda">
                     <input id="fecha-buscar" name="fecha-buscar" class="input-buscar" data-wrapper-class="controlgroup-textinput ui-btn"type="date" min="2014-01-01" max="2014-12-31">
-                    <button data-inline="true" onClick="buscar()" class="btn-buscar">Buscar</button>
+                    <button data-inline="true" onClick="buscar()" class="btn-buscar"></button>
                 </div>
-
-                <div id="reflexion" class="margen-superior"></div>
+                <!-- <div id="reflexion" class="margen-superior"></div> -->
+                
+                <div class="busqueda-encabezado-contenedor">
+                    <h6 class="encabezado-light">Las cinco más recientes</h6>
+                    <div class="separador-radius"></div>
+                </div>
             </div>
 
             <nav class="navbar-menu">

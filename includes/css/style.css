@@ -1,6 +1,10 @@
 @charset "UTF-8";
-body, .ui-header .ui-title {
+body, .ui-header .ui-title, .encabezado-light {
   font-family: 'Avenir-Light', sans-serif;
+  font-weight: normal; }
+
+.contenedor-busqueda, .ui-input-text {
+  font-family: 'Avenir-Medium', sans-serif;
   font-weight: normal; }
 
 #fecha {
@@ -11,11 +15,11 @@ body, .ui-header .ui-title {
   font-family: 'Avenir-BookOblique', sans-serif;
   font-weight: normal; }
 
-#titulo {
+#titulo, .encabezado-secundario, #content strong {
   font-family: 'Avenir-Black', sans-serif;
   font-weight: normal; }
 
-#reflexion {
+#reflexion, #content {
   font-family: Georgia, serif; }
 
 body {
@@ -26,17 +30,41 @@ body {
   background-color: #F9F9F9; }
 
 #content {
+  max-width: 700px;
+  margin-right: auto;
+  margin-left: auto;
   padding: 24px 20px 78px 20px; }
+  #content p {
+    margin-top: 0;
+    margin-bottom: 21px; }
+    #content p:last-child {
+      margin-bottom: 0; }
 
 a {
   -webkit-touch-callout: none;
   -webkit-user-select: none;
   text-decoration: none; }
 
+.encabezado-light {
+  color: #111111;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.5px; }
+
+.separador-chico, .separador-radius {
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #00E0FF; }
+
 .separador-chico {
   width: 30px;
-  height: 1px;
-  background-color: #00E0FF; }
+  height: 1px; }
+
+.separador-radius {
+  width: 20px;
+  height: 3px;
+  margin-bottom: 24px;
+  border-radius: 2px; }
 
 .centrar {
   text-align: center !important; }
@@ -129,12 +157,15 @@ a {
   line-height: 17px;
   text-transform: uppercase; }
 
+#titulo, .encabezado-secundario {
+  letter-spacing: -0.5px;
+  text-align: center; }
+
 #titulo {
   margin-top: 10px;
   margin-bottom: 11px;
   font-size: 30px;
-  line-height: 38px;
-  letter-spacing: -0.5px; }
+  line-height: 38px; }
 
 #versiculo {
   opacity: 0.7;
@@ -145,6 +176,11 @@ a {
   text-indent: 0px; }
 #reflexion p:last-child {
   margin-bottom: 0; }
+
+#content, #contenido {
+  color: #111111;
+  font-size: 14px;
+  line-height: 24px; }
 
 #contedido {
   margin-top: 18px;
@@ -158,23 +194,61 @@ a {
 .margen-superior {
   margin-top: 15px; }
 
-.ui-input-text {
-  background: rgba(0, 0, 0, 0.2) !important;
-  border-radius: 10px 0px 0px 10px !important;
-  color: #FFF !important;
-  width: 100px; }
-  .ui-input-text input {
-    text-align: center !important;
-    text-shadow: none !important; }
+.contenedor-busqueda {
+  width: 260px;
+  margin: 0 auto;
+  text-align: center; }
+  .contenedor-busqueda .ui-controlgroup-controls {
+    display: block;
+    width: 100%; }
+  .contenedor-busqueda .ui-input-text, .contenedor-busqueda .btn-buscar {
+    height: 38px;
+    padding: 0 !important;
+    border-color: #BBC5CE; }
+  .contenedor-busqueda .ui-input-text {
+    width: 219px !important;
+    background: #FFF;
+    color: rgba(17, 17, 17, 0.3);
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 1px;
+    border-radius: 2px 0px 0px 2px !important; }
+    .contenedor-busqueda .ui-input-text input {
+      padding: 8px 15px 9px 15px;
+      text-align: center;
+      text-shadow: none; }
+  .contenedor-busqueda .btn-buscar {
+    position: relative;
+    width: 39px !important;
+    background-color: #FFF;
+    border-radius: 0px 2px 2px 0px !important;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("../img/icono-buscar.svg");
+    background-size: 14px 15px;
+    border-left: none; }
+    .contenedor-busqueda .btn-buscar:before {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 1px;
+      height: 100%;
+      background-color: rgba(187, 197, 206, 0.3); }
 
-.btn-buscar {
-  border-radius: 0px 10px 10px 0px !important;
-  border-color: #949494 !important; }
-
-.controlgroup-textinput {
-  padding-top: 0.22em !important;
-  padding-bottom: 0.22em !important;
-  border-color: #3A3A3A !important; }
+.busqueda-encabezado-contenedor {
+  text-align: center; }
+  .busqueda-encabezado-contenedor .encabezado-light {
+    margin-top: 26px;
+    margin-bottom: 15px; }
 
 .ui-controlgroup-label {
   text-align: center !important; }
+
+.encabezado-secundario {
+  margin-top: 0;
+  margin-bottom: 22px;
+  color: #111111;
+  font-size: 24px;
+  line-height: 32px; }
