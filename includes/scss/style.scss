@@ -74,7 +74,7 @@ body, .ui-header .ui-title, .encabezado-light {
     font-weight: normal;
 }
 
-#titulo, .encabezado-secundario, #content strong {
+#titulo, .encabezado-secundario, #content h3 {
     font-family: 'Avenir-Black', sans-serif;
     font-weight: normal;
 }
@@ -144,9 +144,9 @@ a {
 }
 
 // Clases para alinear
-.centrar{ text-align:center!important; }
-.izquierda{ text-align:left!important; }
-.derecha{ text-align:right!important; }
+.centrar { text-align:center!important; }
+.izquierda { text-align:left!important; }
+.derecha { text-align:right!important; }
 
 // Clases para ocultar
 .ocultar{ display:none; }
@@ -185,7 +185,7 @@ a {
     width: 100%;
     bottom: 0;
     left: 0;
-    background-image: url('../img/menu-background.png');
+    background-image: url('../img/background-general.png');
     border-top: 1px solid #E7EAED;
     text-align: center;
 
@@ -210,9 +210,22 @@ a {
                 line-height: 15px;
                 font-weight: normal;
 
-                &:after {
+                &:before, &:after {
                     content: '';
                     display: block;
+                }
+
+                &:before {
+                    opacity: 0;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    height: 4px;
+                    width: 100%;
+                    background-color: $azul_general;
+                }
+
+                &:after {
                     position: absolute;
                     width: 1px;
                     height: calc(100% - 20px);
@@ -226,8 +239,10 @@ a {
 
             &.selected {
                 a {
+                    position: relative;
                     font-family: 'Avenir-Heavy', sans-serif;
-                    
+
+                    &:before { opacity: 1; }
                 }
             }
         }
@@ -247,9 +262,21 @@ a {
 
 // Header 
 .ui-header {
-    background-image: url('../img/header-background.png');
+    background-image: url('../img/background-general.png');
     border-top: 0;
     border-bottom: 1px solid #D9DEE3;
+
+    &:before {
+        z-index: 1;
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background-color: rgba(255, 255, 255, 0.95);
+    }
 
     .ui-title {
         min-height: 0;
@@ -258,6 +285,11 @@ a {
         font-size: 16px;
         line-height: 16px;
         text-transform: uppercase;
+    }
+
+    .ui-title, #btnCompartir {
+        z-index: 3;
+        position: relative;
     }
 }
 

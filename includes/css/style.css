@@ -15,7 +15,7 @@ body, .ui-header .ui-title, .encabezado-light {
   font-family: 'Avenir-BookOblique', sans-serif;
   font-weight: normal; }
 
-#titulo, .encabezado-secundario, #content strong {
+#titulo, .encabezado-secundario, #content h3 {
   font-family: 'Avenir-Black', sans-serif;
   font-weight: normal; }
 
@@ -90,7 +90,7 @@ a {
   width: 100%;
   bottom: 0;
   left: 0;
-  background-image: url("../img/menu-background.png");
+  background-image: url("../img/background-general.png");
   border-top: 1px solid #E7EAED;
   text-align: center; }
   .navbar-menu ul {
@@ -113,9 +113,18 @@ a {
         font-size: 12px;
         line-height: 15px;
         font-weight: normal; }
-        .navbar-menu ul li a:after {
+        .navbar-menu ul li a:before, .navbar-menu ul li a:after {
           content: '';
-          display: block;
+          display: block; }
+        .navbar-menu ul li a:before {
+          opacity: 0;
+          position: absolute;
+          top: 0;
+          left: 0;
+          height: 4px;
+          width: 100%;
+          background-color: #00E0FF; }
+        .navbar-menu ul li a:after {
           position: absolute;
           width: 1px;
           height: calc(100% - 20px);
@@ -125,7 +134,10 @@ a {
       .navbar-menu ul li a, .navbar-menu ul li a:hover, .navbar-menu ul li a:visited, .navbar-menu ul li a:focus {
         color: #111; }
       .navbar-menu ul li.selected a {
+        position: relative;
         font-family: 'Avenir-Heavy', sans-serif; }
+        .navbar-menu ul li.selected a:before {
+          opacity: 1; }
   .navbar-menu .icon-menu {
     display: block;
     margin-right: auto;
@@ -140,9 +152,19 @@ a {
   background-size: cover; }
 
 .ui-header {
-  background-image: url("../img/header-background.png");
+  background-image: url("../img/background-general.png");
   border-top: 0;
   border-bottom: 1px solid #D9DEE3; }
+  .ui-header:before {
+    z-index: 1;
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.95); }
   .ui-header .ui-title {
     min-height: 0;
     padding-top: 18px;
@@ -150,6 +172,9 @@ a {
     font-size: 16px;
     line-height: 16px;
     text-transform: uppercase; }
+  .ui-header .ui-title, .ui-header #btnCompartir {
+    z-index: 3;
+    position: relative; }
 
 #fecha {
   opacity: 0.5;
@@ -174,6 +199,7 @@ a {
 
 #reflexion ul {
   text-indent: 0px; }
+
 #reflexion p:last-child {
   margin-bottom: 0; }
 

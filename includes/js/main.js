@@ -34,20 +34,6 @@ window.onload = function() {
     };
 }
 
-// CONFIGURACIÓN MENU
-$(function() {
-    $('#menu').mmenu({
-        position: "left"
-    });
-});
-
-// ABRIR MENU DESLIZANDO DERECHA
-$(document).on('pageinit',function(){
-    $("#page").on("swiperight",function(){
-        $("#menu").trigger( "open.mm" );
-    });
-});
-
 // ACTUALIZAR
 function actualizar(){
     document.getElementById("reflexion").style.display = "none";

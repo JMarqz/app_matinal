@@ -43,14 +43,13 @@ $(document).ready(function(){
 						var reflexion = '<div id="fecha" class="derecha">'+item.dia+'/'+mes+'/'+item.anio+'</div>' +
 						'<h2 id="titulo" class="centrar">'+item.titulo+'</h2>' +
 						'<p id="versiculo" class="versiculo centrar">'+item.versiculo+'</p>'+
-						'<div id="contedido" class="contenido-reflexion">'+item.contenido+'</div>'					
+						'<div id="contedido" class="contenido-reflexion">'+item.contenido+'</div>';
 						output.append(reflexion);
 
 					} else if(i==1){
 						var pie_pagina = '<p id="footer_reflexion" class="creditos-reflexion">'+
 						item.nombreMatinal+'<br>'+
-						item.autor+'<br>'+
-						item.anio+'</p>';
+						item.autor+'<br>';
 
 						output.append(pie_pagina);
 					}
