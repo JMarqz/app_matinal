@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/* --------------------------------- SASS -------------------------------- */
+/* ----------------------------- TIPOGRAFÍAS ------------------------------ */
 body, .ui-header .ui-title, .encabezado-light {
   font-family: 'Avenir-Light', sans-serif;
   font-weight: normal; }
@@ -20,8 +22,9 @@ body, .ui-header .ui-title, .encabezado-light {
   font-weight: normal; }
 
 #reflexion, #content {
-  font-family: Georgia, serif; }
+  font-family: 'HiraMinProN-W3', Georgia, serif; }
 
+/* ------------------------------- GENERAL -------------------------------- */
 body {
   font-size: 14px;
   line-height: 24px; }
@@ -183,7 +186,9 @@ a {
   text-transform: uppercase; }
 
 #titulo, .encabezado-secundario {
-  letter-spacing: -0.5px;
+  letter-spacing: -0.5px; }
+
+.encabezado-secundario {
   text-align: center; }
 
 #titulo {
@@ -196,12 +201,21 @@ a {
   opacity: 0.7;
   margin-top: 0;
   margin-bottom: 18px; }
+  #versiculo:after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 1px;
+    margin-top: 18px;
+    background-color: #00E0FF; }
 
-#reflexion ul {
-  text-indent: 0px; }
-
-#reflexion p:last-child {
-  margin-bottom: 0; }
+#reflexion {
+  font-size: 15px;
+  line-height: 1.6; }
+  #reflexion ul {
+    text-indent: 0px; }
+  #reflexion p:last-child {
+    margin-bottom: 0; }
 
 #content, #contenido {
   color: #111111;
@@ -278,3 +292,17 @@ a {
   color: #111111;
   font-size: 24px;
   line-height: 32px; }
+
+/* ----------------------------- BREAKPOINTS ------------------------------ */
+@media (min-width: 768px) {
+  #fecha {
+    text-align: right; }
+  #titulo, #versiculo {
+    text-align: center; }
+  #versiculo {
+    max-width: 550px;
+    margin-right: auto;
+    margin-left: auto; }
+    #versiculo:after {
+      margin-right: auto;
+      margin-left: auto; } }

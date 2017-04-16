@@ -40,9 +40,9 @@ $(document).ready(function(){
 		            }
 
 		            if (i==0) {
-						var reflexion = '<div id="fecha" class="derecha">'+item.dia+'/'+mes+'/'+item.anio+'</div>' +
-						'<h2 id="titulo" class="centrar">'+item.titulo+'</h2>' +
-						'<p id="versiculo" class="versiculo centrar">'+item.versiculo+'</p>'+
+						var reflexion = '<div id="fecha">'+item.dia+'/'+mes+'/'+item.anio+'</div>' +
+						'<h2 id="titulo">'+item.titulo+'</h2>' +
+						'<div id="versiculo" class="versiculo">'+item.versiculo+'</div>'+
 						'<div id="contedido" class="contenido-reflexion">'+item.contenido+'</div>';
 						output.append(reflexion);
 

@@ -7,7 +7,7 @@
 		"uuidString": "3A6CD7A8-BB17-401D-A391-922A15B31738"
 		}
 	],
-"creatorBuild": "25444",
+"creatorBuild": "25813",
 "files": {
 	"\/.gitattributes": {
 		"ft": 8192,
@@ -33,7 +33,10 @@
 		"oA": 0,
 		"oAP": "\/icons\/ios\/icon-40.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/icons\/ios\/icon-40@2x.png": {
 		"ft": 32768,
@@ -41,7 +44,10 @@
 		"oA": 0,
 		"oAP": "\/icons\/ios\/icon-40@2x.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/icons\/ios\/icon-50.png": {
 		"ft": 32768,
@@ -49,7 +55,10 @@
 		"oA": 0,
 		"oAP": "\/icons\/ios\/icon-50.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/icons\/ios\/icon-50@2x.png": {
 		"ft": 32768,
@@ -57,7 +66,10 @@
 		"oA": 0,
 		"oAP": "\/icons\/ios\/icon-50@2x.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/icons\/ios\/icon-60.png": {
 		"ft": 32768,
@@ -65,7 +77,10 @@
 		"oA": 0,
 		"oAP": "\/icons\/ios\/icon-60.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/icons\/ios\/icon-60@2x.png": {
 		"ft": 32768,
@@ -73,7 +88,10 @@
 		"oA": 0,
 		"oAP": "\/icons\/ios\/icon-60@2x.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/icons\/ios\/icon-60@3x.png": {
 		"ft": 32768,
@@ -81,7 +99,10 @@
 		"oA": 0,
 		"oAP": "\/icons\/ios\/icon-60@3x.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/icons\/ios\/icon-72.png": {
 		"ft": 32768,
@@ -89,7 +110,10 @@
 		"oA": 0,
 		"oAP": "\/icons\/ios\/icon-72.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/icons\/ios\/icon-72@2x.png": {
 		"ft": 32768,
@@ -97,7 +121,10 @@
 		"oA": 0,
 		"oAP": "\/icons\/ios\/icon-72@2x.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/icons\/ios\/icon-76.png": {
 		"ft": 32768,
@@ -105,7 +132,10 @@
 		"oA": 0,
 		"oAP": "\/icons\/ios\/icon-76.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/icons\/ios\/icon-76@2x.png": {
 		"ft": 32768,
@@ -113,7 +143,10 @@
 		"oA": 0,
 		"oAP": "\/icons\/ios\/icon-76@2x.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/icons\/ios\/icon-small.png": {
 		"ft": 32768,
@@ -121,7 +154,10 @@
 		"oA": 0,
 		"oAP": "\/icons\/ios\/icon-small.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/icons\/ios\/icon-small@2x.png": {
 		"ft": 32768,
@@ -129,7 +165,10 @@
 		"oA": 0,
 		"oAP": "\/icons\/ios\/icon-small@2x.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/icons\/ios\/icon.png": {
 		"ft": 32768,
@@ -137,7 +176,10 @@
 		"oA": 0,
 		"oAP": "\/icons\/ios\/icon.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/icons\/ios\/icon@2x.png": {
 		"ft": 32768,
@@ -145,7 +187,10 @@
 		"oA": 0,
 		"oAP": "\/icons\/ios\/icon@2x.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/animation.css": {
 		"aP": 0,
@@ -181,7 +226,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/action-black.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/action-white.png": {
 		"ft": 32768,
@@ -189,7 +237,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/action-white.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/alert-black.png": {
 		"ft": 32768,
@@ -197,7 +248,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/alert-black.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/alert-white.png": {
 		"ft": 32768,
@@ -205,7 +259,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/alert-white.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/arrow-d-black.png": {
 		"ft": 32768,
@@ -213,7 +270,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/arrow-d-black.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/arrow-d-l-black.png": {
 		"ft": 32768,
@@ -221,7 +281,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/arrow-d-l-black.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/arrow-d-l-white.png": {
 		"ft": 32768,
@@ -229,7 +292,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/arrow-d-l-white.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/arrow-d-r-black.png": {
 		"ft": 32768,
@@ -237,7 +303,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/arrow-d-r-black.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/arrow-d-r-white.png": {
 		"ft": 32768,
@@ -245,7 +314,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/arrow-d-r-white.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/arrow-d-white.png": {
 		"ft": 32768,
@@ -253,7 +325,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/arrow-d-white.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/arrow-l-black.png": {
 		"ft": 32768,
@@ -261,7 +336,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/arrow-l-black.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/arrow-l-white.png": {
 		"ft": 32768,
@@ -269,7 +347,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/arrow-l-white.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/arrow-r-black.png": {
 		"ft": 32768,
@@ -277,7 +358,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/arrow-r-black.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/arrow-r-white.png": {
 		"ft": 32768,
@@ -285,7 +369,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/arrow-r-white.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/arrow-u-black.png": {
 		"ft": 32768,
@@ -293,7 +380,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/arrow-u-black.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/arrow-u-l-black.png": {
 		"ft": 32768,
@@ -301,7 +391,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/arrow-u-l-black.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/arrow-u-l-white.png": {
 		"ft": 32768,
@@ -309,7 +402,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/arrow-u-l-white.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/arrow-u-r-black.png": {
 		"ft": 32768,
@@ -317,7 +413,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/arrow-u-r-black.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/arrow-u-r-white.png": {
 		"ft": 32768,
@@ -325,7 +424,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/arrow-u-r-white.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/arrow-u-white.png": {
 		"ft": 32768,
@@ -333,7 +435,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/arrow-u-white.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/audio-black.png": {
 		"ft": 32768,
@@ -341,7 +446,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/audio-black.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/audio-white.png": {
 		"ft": 32768,
@@ -349,7 +457,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/audio-white.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/back-black.png": {
 		"ft": 32768,
@@ -357,7 +468,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/back-black.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/back-white.png": {
 		"ft": 32768,
@@ -365,7 +479,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/back-white.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/bars-black.png": {
 		"ft": 32768,
@@ -373,7 +490,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/bars-black.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/bars-white.png": {
 		"ft": 32768,
@@ -381,7 +501,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/bars-white.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/bullets-black.png": {
 		"ft": 32768,
@@ -389,7 +512,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/bullets-black.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/bullets-white.png": {
 		"ft": 32768,
@@ -397,7 +523,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/bullets-white.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/calendar-black.png": {
 		"ft": 32768,
@@ -405,7 +534,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/calendar-black.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/calendar-white.png": {
 		"ft": 32768,
@@ -413,7 +545,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/calendar-white.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/camera-black.png": {
 		"ft": 32768,
@@ -421,7 +556,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/camera-black.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/camera-white.png": {
 		"ft": 32768,
@@ -429,7 +567,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/camera-white.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/carat-d-black.png": {
 		"ft": 32768,
@@ -437,7 +578,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/carat-d-black.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/carat-d-white.png": {
 		"ft": 32768,
@@ -445,7 +589,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/carat-d-white.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/carat-l-black.png": {
 		"ft": 32768,
@@ -453,7 +600,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/carat-l-black.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/carat-l-white.png": {
 		"ft": 32768,
@@ -461,7 +611,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/carat-l-white.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/carat-r-black.png": {
 		"ft": 32768,
@@ -469,7 +622,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/carat-r-black.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/carat-r-white.png": {
 		"ft": 32768,
@@ -477,7 +633,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/carat-r-white.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/carat-u-black.png": {
 		"ft": 32768,
@@ -485,7 +644,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/carat-u-black.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/carat-u-white.png": {
 		"ft": 32768,
@@ -493,7 +655,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/carat-u-white.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/check-black.png": {
 		"ft": 32768,
@@ -501,7 +666,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/check-black.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/check-white.png": {
 		"ft": 32768,
@@ -509,7 +677,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/check-white.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/clock-black.png": {
 		"ft": 32768,
@@ -517,7 +688,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/clock-black.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/clock-white.png": {
 		"ft": 32768,
@@ -525,7 +699,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/clock-white.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/cloud-black.png": {
 		"ft": 32768,
@@ -533,7 +710,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/cloud-black.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/cloud-white.png": {
 		"ft": 32768,
@@ -541,7 +721,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/cloud-white.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/comment-black.png": {
 		"ft": 32768,
@@ -549,7 +732,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/comment-black.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/comment-white.png": {
 		"ft": 32768,
@@ -557,7 +743,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/comment-white.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/delete-black.png": {
 		"ft": 32768,
@@ -565,7 +754,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/delete-black.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/delete-white.png": {
 		"ft": 32768,
@@ -573,7 +765,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/delete-white.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/edit-black.png": {
 		"ft": 32768,
@@ -581,7 +776,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/edit-black.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/edit-white.png": {
 		"ft": 32768,
@@ -589,7 +787,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/edit-white.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/eye-black.png": {
 		"ft": 32768,
@@ -597,7 +798,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/eye-black.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/eye-white.png": {
 		"ft": 32768,
@@ -605,7 +809,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/eye-white.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/forbidden-black.png": {
 		"ft": 32768,
@@ -613,7 +820,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/forbidden-black.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/forbidden-white.png": {
 		"ft": 32768,
@@ -621,7 +831,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/forbidden-white.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/forward-black.png": {
 		"ft": 32768,
@@ -629,7 +842,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/forward-black.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/forward-white.png": {
 		"ft": 32768,
@@ -637,7 +853,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/forward-white.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/gear-black.png": {
 		"ft": 32768,
@@ -645,7 +864,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/gear-black.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/gear-white.png": {
 		"ft": 32768,
@@ -653,7 +875,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/gear-white.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/grid-black.png": {
 		"ft": 32768,
@@ -661,7 +886,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/grid-black.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/grid-white.png": {
 		"ft": 32768,
@@ -669,7 +897,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/grid-white.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/heart-black.png": {
 		"ft": 32768,
@@ -677,7 +908,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/heart-black.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/heart-white.png": {
 		"ft": 32768,
@@ -685,7 +919,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/heart-white.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/home-black.png": {
 		"ft": 32768,
@@ -693,7 +930,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/home-black.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/home-white.png": {
 		"ft": 32768,
@@ -701,7 +941,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/home-white.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/info-black.png": {
 		"ft": 32768,
@@ -709,7 +952,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/info-black.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/info-white.png": {
 		"ft": 32768,
@@ -717,7 +963,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/info-white.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/location-black.png": {
 		"ft": 32768,
@@ -725,7 +974,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/location-black.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/location-white.png": {
 		"ft": 32768,
@@ -733,7 +985,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/location-white.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/lock-black.png": {
 		"ft": 32768,
@@ -741,7 +996,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/lock-black.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/lock-white.png": {
 		"ft": 32768,
@@ -749,7 +1007,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/lock-white.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/mail-black.png": {
 		"ft": 32768,
@@ -757,7 +1018,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/mail-black.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/mail-white.png": {
 		"ft": 32768,
@@ -765,7 +1029,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/mail-white.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/minus-black.png": {
 		"ft": 32768,
@@ -773,7 +1040,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/minus-black.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/minus-white.png": {
 		"ft": 32768,
@@ -781,7 +1051,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/minus-white.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/navigation-black.png": {
 		"ft": 32768,
@@ -789,7 +1062,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/navigation-black.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/navigation-white.png": {
 		"ft": 32768,
@@ -797,7 +1073,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/navigation-white.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/phone-black.png": {
 		"ft": 32768,
@@ -805,7 +1084,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/phone-black.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/phone-white.png": {
 		"ft": 32768,
@@ -813,7 +1095,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/phone-white.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/plus-black.png": {
 		"ft": 32768,
@@ -821,7 +1106,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/plus-black.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/plus-white.png": {
 		"ft": 32768,
@@ -829,7 +1117,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/plus-white.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/power-black.png": {
 		"ft": 32768,
@@ -837,7 +1128,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/power-black.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/power-white.png": {
 		"ft": 32768,
@@ -845,7 +1139,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/power-white.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/recycle-black.png": {
 		"ft": 32768,
@@ -853,7 +1150,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/recycle-black.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/recycle-white.png": {
 		"ft": 32768,
@@ -861,7 +1161,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/recycle-white.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/refresh-black.png": {
 		"ft": 32768,
@@ -869,7 +1172,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/refresh-black.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/refresh-white.png": {
 		"ft": 32768,
@@ -877,7 +1183,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/refresh-white.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/search-black.png": {
 		"ft": 32768,
@@ -885,7 +1194,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/search-black.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/search-white.png": {
 		"ft": 32768,
@@ -893,7 +1205,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/search-white.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/shop-black.png": {
 		"ft": 32768,
@@ -901,7 +1216,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/shop-black.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/shop-white.png": {
 		"ft": 32768,
@@ -909,7 +1227,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/shop-white.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/star-black.png": {
 		"ft": 32768,
@@ -917,7 +1238,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/star-black.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/star-white.png": {
 		"ft": 32768,
@@ -925,7 +1249,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/star-white.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/tag-black.png": {
 		"ft": 32768,
@@ -933,7 +1260,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/tag-black.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/tag-white.png": {
 		"ft": 32768,
@@ -941,7 +1271,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/tag-white.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/user-black.png": {
 		"ft": 32768,
@@ -949,7 +1282,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/user-black.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/user-white.png": {
 		"ft": 32768,
@@ -957,7 +1293,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/user-white.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/video-black.png": {
 		"ft": 32768,
@@ -965,7 +1304,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/video-black.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/images\/icons-png\/video-white.png": {
 		"ft": 32768,
@@ -973,7 +1315,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/css\/images\/icons-png\/video-white.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/css\/jquery.mobile.icons.min.css": {
 		"aP": 0,
@@ -1059,7 +1404,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/iconos\/autor.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/iconos\/buscar.png": {
 		"ft": 32768,
@@ -1067,7 +1415,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/iconos\/buscar.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/iconos\/hoy.png": {
 		"ft": 32768,
@@ -1075,7 +1426,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/iconos\/hoy.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/iconos\/idea.png": {
 		"ft": 32768,
@@ -1083,7 +1437,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/iconos\/idea.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/img\/background-general.png": {
 		"ft": 32768,
@@ -1091,7 +1448,10 @@
 		"oA": 0,
 		"oAP": "\/includes\/img\/background-general.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/includes\/img\/icono-buscar.svg": {
 		"ft": 2097152,
@@ -1135,6 +1495,15 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/includes\/js\/min\/main-min.js",
+		"oF": 0,
+		"sC": 1,
+		"tS": 0
+		},
+	"\/includes\/js\/min\/load-json-min.js": {
+		"ft": 64,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/includes\/js\/min\/min\/load-json-min-min.js",
 		"oF": 0,
 		"sC": 1,
 		"tS": 0
@@ -1221,7 +1590,10 @@
 		"oA": 0,
 		"oAP": "\/screen\/ios\/launch-iphone6+.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/screen\/ios\/launch-iphone6.png": {
 		"ft": 32768,
@@ -1229,7 +1601,10 @@
 		"oA": 0,
 		"oAP": "\/screen\/ios\/launch-iphone6.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/screen\/ios\/screen-ipad-portrait-2x.png": {
 		"ft": 32768,
@@ -1237,7 +1612,10 @@
 		"oA": 0,
 		"oAP": "\/screen\/ios\/screen-ipad-portrait-2x.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/screen\/ios\/screen-ipad-portrait.png": {
 		"ft": 32768,
@@ -1245,7 +1623,10 @@
 		"oA": 0,
 		"oAP": "\/screen\/ios\/screen-ipad-portrait.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/screen\/ios\/screen-iphone-portrait-2x.png": {
 		"ft": 32768,
@@ -1253,7 +1634,10 @@
 		"oA": 0,
 		"oAP": "\/screen\/ios\/screen-iphone-portrait-2x.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/screen\/ios\/screen-iphone-portrait-568h-2x.png": {
 		"ft": 32768,
@@ -1261,7 +1645,10 @@
 		"oA": 0,
 		"oAP": "\/screen\/ios\/screen-iphone-portrait-568h-2x.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/screen\/ios\/screen-iphone-portrait.png": {
 		"ft": 32768,
@@ -1269,7 +1656,10 @@
 		"oA": 0,
 		"oAP": "\/screen\/ios\/screen-iphone-portrait.png",
 		"oF": 0,
-		"opt": 0
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		}
 	},
 "hooks": [
@@ -1724,6 +2114,10 @@
 			"active": 0,
 			"optionString": "{'properties': 'always'}"
 			},
+		"capitalized-comments": {
+			"active": 0,
+			"optionString": "'always', {'ignoreInlineComments': false, 'ignoreConsecutiveComments': false}"
+			},
 		"class-methods-use-this": {
 			"active": 0,
 			"optionString": "{'exceptMethods': []}"
@@ -1888,6 +2282,10 @@
 			"active": 0,
 			"optionString": "{'max': 10}, {'ignoreTopLevelFunctions': true}"
 			},
+		"max-statements-per-line": {
+			"active": 0,
+			"optionString": "{'max': 1}"
+			},
 		"multiline-ternary": {
 			"active": 0,
 			"optionString": "'always'"
@@ -1920,6 +2318,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-await-in-loop": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-bitwise": {
 			"active": 0,
 			"optionString": "{'allow': ['~'], 'int32Hint': true}"
@@ -1938,6 +2340,10 @@
 			},
 		"no-class-assign": {
 			"active": 1,
+			"optionString": ""
+			},
+		"no-compare-neg-zero": {
+			"active": 0,
 			"optionString": ""
 			},
 		"no-cond-assign": {
@@ -2140,6 +2546,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-multi-assign": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-multi-spaces": {
 			"active": 0,
 			"optionString": "{'exceptions': {'Property': true, 'BinaryExpression': false, 'VariableDeclarator': false, 'ImportDeclaration': false}}"
@@ -2220,6 +2630,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-prototype-builtins": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-redeclare": {
 			"active": 1,
 			"optionString": "{'builtinGlobals': false}"
@@ -2251,6 +2665,10 @@
 		"no-return-assign": {
 			"active": 0,
 			"optionString": "'except-parens'"
+			},
+		"no-return-await": {
+			"active": 0,
+			"optionString": ""
 			},
 		"no-script-url": {
 			"active": 0,
@@ -2412,6 +2830,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"nonblock-statement-body-position": {
+			"active": 0,
+			"optionString": "'beside'"
+			},
 		"object-curly-newline": {
 			"active": 0,
 			"optionString": "{'ObjectExpression': {'multiline': true}, 'ObjectPattern': {'multiline': true}}"
@@ -2456,9 +2878,17 @@
 			"active": 0,
 			"optionString": "{'destructuring': 'any', 'ignoreReadBeforeAssign': false}"
 			},
+		"prefer-destructuring": {
+			"active": 0,
+			"optionString": "{'array': true, 'object': true}, {'enforceForRenamedProperties': false}"
+			},
 		"prefer-numeric-literals": {
 			"active": 0,
 			"optionString": ""
+			},
+		"prefer-promise-reject-errors": {
+			"active": 0,
+			"optionString": "{'allowEmptyReject': false}"
 			},
 		"prefer-rest-params": {
 			"active": 0,
@@ -2483,6 +2913,10 @@
 		"radix": {
 			"active": 0,
 			"optionString": "'always'"
+			},
+		"require-await": {
+			"active": 0,
+			"optionString": ""
 			},
 		"require-jsdoc": {
 			"active": 0,
@@ -2549,6 +2983,10 @@
 			"optionString": ""
 			},
 		"template-curly-spacing": {
+			"active": 0,
+			"optionString": "'never'"
+			},
+		"template-tag-spacing": {
 			"active": 0,
 			"optionString": "'never'"
 			},
@@ -2995,7 +3433,8 @@
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0
+		"autoOutputPathStyle": 0,
+		"quality": 100
 		},
 	"languageDefaultsJS": {
 		"autoOutputAction": 0,
@@ -3018,14 +3457,6 @@
 		"autoOutputPathStyle": 0,
 		"orderOutput": 0,
 		"outputStyle": 1
-		},
-	"languageDefaultsJSX": {
-		"autoOutputAction": 0,
-		"autoOutputPathFilenamePattern": "*.js",
-		"autoOutputPathRelativePath": "",
-		"autoOutputPathReplace1": "jsx",
-		"autoOutputPathReplace2": "js",
-		"autoOutputPathStyle": 0
 		},
 	"languageDefaultsKIT": {
 		"autoOutputAction": 0,
@@ -3088,7 +3519,9 @@
 		"autoOutputPathRelativePath": "",
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
-		"autoOutputPathStyle": 0
+		"autoOutputPathStyle": 0,
+		"optimizerType": 1,
+		"quality": 100
 		},
 	"languageDefaultsPUG": {
 		"autoOutputAction": 0,
@@ -3316,6 +3749,10 @@
 			},
 		"space-colon": {
 			"active": 1,
+			"flagValue": -1
+			},
+		"support-ie8": {
+			"active": 0,
 			"flagValue": -1
 			},
 		"toplevel": {

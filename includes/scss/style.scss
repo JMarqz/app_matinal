@@ -1,3 +1,4 @@
+/* --------------------------------- SASS -------------------------------- */
 // Centrado vertical
 @mixin centrar_vertical_hijo($porcentaje) {
     position: absolute;
@@ -53,6 +54,7 @@
     }
 }
 
+/* ----------------------------- TIPOGRAFÍAS ------------------------------ */
 // Tipografías
 body, .ui-header .ui-title, .encabezado-light {
     font-family: 'Avenir-Light', sans-serif;
@@ -80,9 +82,10 @@ body, .ui-header .ui-title, .encabezado-light {
 }
 
 #reflexion, #content {
-    font-family: Georgia, serif;
+    font-family: 'HiraMinProN-W3', Georgia, serif;
 }
 
+/* ------------------------------- GENERAL -------------------------------- */
 // Paleta de colores
 $azul_general: #00E0FF;
 
@@ -301,10 +304,8 @@ a {
     text-transform: uppercase;
 }
 
-#titulo, .encabezado-secundario {
-    letter-spacing: -0.5px;
-    text-align: center;
-}
+#titulo, .encabezado-secundario { letter-spacing: -0.5px; }
+.encabezado-secundario { text-align: center; }
 
 #titulo {
     margin-top: 10px;
@@ -317,9 +318,21 @@ a {
     opacity: 0.7;
     margin-top: 0;
     margin-bottom: 18px;
+
+    &:after {
+        content: '';
+        display: block;
+        width: 30px;
+        height: 1px;
+        margin-top: 18px;
+        background-color: $azul_general;
+    }
 }
 
 #reflexion {
+    font-size: 15px;
+    line-height: 1.6;
+
     ul { text-indent: 0px; }
     p:last-child { margin-bottom: 0; }
 }
@@ -423,4 +436,36 @@ $btn_buscar_radius: 2px;
     font-size: 24px;
     line-height: 32px;
 }
+
+
+/* ----------------------------- BREAKPOINTS ------------------------------ */
+$break_xs_max: 767px;
+$break_sm_min: 768px;
+$break_sm_max: 991px;
+$break_md_min: 992px;
+$break_md_max: 1199px;
+$break_lg_min: 1200px;
+
+// Tablet
+@media (min-width: $break_sm_min) {
+    #fecha { text-align: right; }
+    #titulo, #versiculo { text-align: center; }
+    
+    #versiculo {
+        max-width: 550px;
+        margin-right: auto;
+        margin-left: auto;
+
+        &:after {
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+}
+
+// Desktop MD
+@media (min-width: $break_md_min) {}
+
+// Desktop LG
+@media (min-width: $break_lg_min) {}
 
