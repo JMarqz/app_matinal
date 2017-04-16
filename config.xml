@@ -32,7 +32,7 @@
     <plugin name="cordova-plugin-inappbrowser" spec="~1.7.0" />
     <plugin name="cordova-plugin-statusbar" spec="~2.2.2" />
     <!-- <plugin spec="https://github.com/phonegap-build/StatusBarPlugin" source="git" spec="~1.1.0"/> -->
-    <plugin name="cordova-plugin-appavailability" spec="0.3.1" />
+    <plugin name="cordova-plugin-appavailability" source="npm" />
     <plugin name="cordova-plugin-x-socialsharing" spec="4.3.8" source="npm" />
 
     <!-- <plugin name="org.apache.cordova.device" spec="0.3.0" source="pgb" />
