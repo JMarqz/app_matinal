@@ -3,7 +3,7 @@
 <widget
     xmlns   = "http://www.w3.org/ns/widgets"
     xmlns:gap   = "http://phonegap.com/ns/1.0"
-    id          = "com.jmarqz.matinal"    
+    id          = "com.jmarqz.matinal-jovenes-v3"    
     version     = "3.0.0" 
     versionCode = "3.0.0" >
 
@@ -27,8 +27,8 @@
     <plugin name="cordova-plugin-splashscreen" spec="~4.0.2" />
     <plugin name="cordova-plugin-inappbrowser" spec="~1.7.0" />
     <plugin name="cordova-plugin-statusbar" spec="~2.2.2" />
-    <plugin name="cordova-plugin-appavailability" source="npm" />
-    <plugin name="cordova-plugin-x-socialsharing" source="npm" />
+    <plugin name="cordova-plugin-appavailability" source="npm" spec="0.4.2" />
+    <plugin name="cordova-plugin-x-socialsharing" source="npm" spec="5.1.7" />
 
     
     <!-- Preferences -->
